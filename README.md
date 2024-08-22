@@ -1,6 +1,6 @@
 # FBoards
 
-**FBoards** is a powerful and flexible whiteboard application designed for collaboration and brainstorming. It allows users to create, manage, and share boards with various tools and features.
+**FBoards** is a powerful and flexible whiteboard application designed for collaboration and team planning. It allows users to create, manage, and control man power along job sites.
 
 ## Features
 
@@ -24,7 +24,8 @@ To install FBoards, follow these steps:
     ```
 3. Install dependencies:
     ```bash
-    npm install
+    pip install -r requirements.txt
+
     ```
 4. Start the application:
     ```bash
@@ -46,12 +47,4 @@ Contributions are welcome! To contribute:
 2. Create a new branch for your feature or bugfix.
 3. Commit your changes and push the branch.
 4. Open a Pull Request with a description of your changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- Special thanks to the contributors and community for their support.
 
