@@ -1,0 +1,1 @@
+{"job_hubs": [{"name": "Job Site 1", "snap_boxes": {"PM": 3, "GM": 5, "Foreman": 7, "Electrician": [9]}}], "employees": [{"name": "Alice", "role": "PM", "position": {"x": 50, "y": 50}}, {"name": "Bob", "role": "GM", "position": {"x": 50, "y": 100}}]}

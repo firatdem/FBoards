@@ -1,0 +1,748 @@
+import tkinter as tk
+import json
+import tkinter.messagebox as messagebox
+
+ROLE_COLORS = {
+    "PM": "#800080",  # Dark purple
+    "GM": "green",
+    "Foreman": "blue",
+    "Electrician": "yellow",
+    "Fire Alarm": "red"  # New role, using the original red color
+}
+
+VERTICAL_SPACING = 100  # Constant vertical spacing between rows
+ELECTRICIAN_BOX_HEIGHT = 550  # Height of the electrician box
+JOB_HUB_WIDTH = 320  # Width of the job site hub
+JOB_HUB_HEIGHT = 800  # Height of the job site hub
+BOX_HEIGHT = 60  # Height of the non-electrician boxes
+DEFAULT_EMPLOYEE_X = 1200  # Where non-assigned employees get placed
+DEFAULT_EMPLOYEE_Y = 50
+GRID_SIZE = 30
+DRAG_DELAY = 250  # Delay in milliseconds
+
+class DraggableBox:
+    def __init__(self, app, canvas, text, role, x, y, phone=None, job_site=None, box=None):
+        self.app = app
+        self.canvas = canvas
+        self.text = text
+        self.role = role
+        self.phone = phone
+        self.color = ROLE_COLORS.get(role, "black")
+        self.font = ("Helvetica", 12, "bold")
+        self.circle_id = canvas.create_oval(x - 25, y, x - 15, y + 10, fill=self.color, outline=self.color)
+        self.id = canvas.create_text(x, y, text=self.get_display_text(), font=self.font, tags="draggable", anchor=tk.NW)
+
+        self.canvas.tag_bind(self.id, "<ButtonPress-1>", self.on_press)
+        self.canvas.tag_bind(self.id, "<ButtonRelease-1>", self.on_release)
+        self.canvas.tag_bind(self.id, "<Button-3>", self.on_double_click)  # Right-click
+        self._drag_data = {"x": 0, "y": 0}
+        self.current_snap_box = None
+        self.drag_delay = None
+        self.is_dragging = False
+
+        if job_site and box:
+            for hub in self.canvas.hub_list:
+                if hub.text == job_site:
+                    self.current_snap_box = {"hub": hub, "box": box, "occupied": True}
+                    hub.update_occupation(box, True, self.id)
+                    self.snap_to_box()
+                    break
+
+    def get_display_text(self):
+        return f"{self.text}\n{self.phone}" if self.phone else self.text
+
+    def snap_to_box(self):
+        if self.current_snap_box:
+            hub = self.current_snap_box["hub"]
+            box = self.current_snap_box["box"]
+            left_x, top_y = self.get_snap_box_left_top(hub, box)
+            self.canvas.coords(self.id, left_x + 35, top_y)
+            self.canvas.coords(self.circle_id, left_x + 10, top_y, left_x + 20, top_y + 10)
+            self.canvas.itemconfig(self.id, text=self.get_display_text())
+
+    def get_snap_box_left_top(self, hub, box):
+        if box == "PM":
+            coords = self.canvas.coords(hub.pm_box)
+        elif box == "GM":
+            coords = self.canvas.coords(hub.gm_box)
+        elif box == "Foreman":
+            coords = self.canvas.coords(hub.foreman_box)
+        elif box == "Electrician" or box == "Fire Alarm":
+            coords = self.canvas.coords(hub.electrician_box)
+        else:
+            coords = [0, 0, 0, 0]  # Default value to avoid the warning
+        left_x = coords[0]
+        top_y = coords[1]
+        return left_x, top_y
+
+    def on_press(self, event):
+        self._drag_data["x"] = event.x
+        self._drag_data["y"] = event.y
+        self.drag_delay = self.canvas.after(DRAG_DELAY, self.start_drag, event)
+
+    def start_drag(self, event):
+        self.is_dragging = True
+        self.canvas.tag_bind(self.id, "<B1-Motion>", self.on_motion)
+
+    def on_motion(self, event):
+        if not self.is_dragging:
+            return
+        delta_x = event.x - self._drag_data["x"]
+        delta_y = event.y - self._drag_data["y"]
+        self.canvas.move(self.id, delta_x, delta_y)
+        self.canvas.move(self.circle_id, delta_x, delta_y)
+        self._drag_data["x"] = event.x
+        self._drag_data["y"] = event.y
+
+        x = self.canvas.canvasx(event.x)
+        y = self.canvas.canvasy(event.y)
+
+        for hub in self.canvas.hub_list:
+            for box_type in ["PM", "GM", "Foreman", "Electrician"]:
+                box_coords = self.canvas.coords(getattr(hub, f"{box_type.lower()}_box"))
+                if box_coords[0] < x < box_coords[2] and box_coords[1] < y < box_coords[3]:
+                    self.canvas.itemconfig(getattr(hub, f"{box_type.lower()}_box"), fill="lightgreen")
+                else:
+                    self.canvas.itemconfig(getattr(hub, f"{box_type.lower()}_box"), fill="white")
+
+    def snap_to_hub(self, hub, box_type, coords):
+        if box_type != "Electrician" and box_type != "Fire Alarm" and getattr(hub, f"{box_type.lower()}_occupied"):
+            return False
+
+        if self.current_snap_box:
+            self.current_snap_box["hub"].update_occupation(self.current_snap_box["box"], False, self.id)
+
+        left_x = coords[0]
+        top_y = coords[1]
+        self.current_snap_box = {"hub": hub, "box": box_type, "occupied": True}
+        hub.update_occupation(box_type, True, self.id)
+        self.canvas.coords(self.id, left_x + 35, top_y)
+        self.canvas.coords(self.circle_id, left_x + 10, top_y, left_x + 20, top_y + 10)
+        self.canvas.tag_raise(self.id)
+        self.canvas.tag_raise(self.circle_id)
+        self.canvas.itemconfig(self.id, text=self.get_display_text())
+        self.app.update_employee_position(self.text, hub.text, box_type, self.id)
+        self.app.update_unassigned_employees()
+        return True
+
+    def on_release(self, event):
+        if self.drag_delay:
+            self.canvas.after_cancel(self.drag_delay)
+            self.drag_delay = None
+
+        if not self.is_dragging:
+            return
+
+        self.is_dragging = False
+        self.canvas.tag_unbind(self.id, "<B1-Motion>")
+        x = self.canvas.canvasx(event.x)
+        y = self.canvas.canvasy(event.y)
+
+        for hub in self.canvas.hub_list:
+            for box_type in ["PM", "GM", "Foreman", "Electrician"]:
+                coords = self.canvas.coords(getattr(hub, f"{box_type.lower()}_box"))
+                if coords[0] < x < coords[2] and coords[1] < y < coords[3]:
+                    if self.snap_to_hub(hub, box_type, coords):
+                        hub.update_electrician_positions()
+                        return
+
+        if self.current_snap_box:
+            self.current_snap_box["hub"].update_occupation(self.current_snap_box["box"], False, self.id)
+        self.current_snap_box = None
+        self.app.update_employee_position(self.text, None, None, self.id)
+        self.app.update_unassigned_employees()
+
+    def change_role(self, new_role):
+        self.role = new_role
+        self.color = ROLE_COLORS.get(new_role, "black")
+        self.canvas.itemconfig(self.circle_id, fill=self.color, outline=self.color)
+
+        if self.current_snap_box:
+            self.current_snap_box["hub"].update_occupation(self.current_snap_box["box"], False, self.id)
+            self.current_snap_box = None
+
+        self.snap_to_box()  # Try snapping to the appropriate box if necessary
+        self.app.update_employee_position(self.text, None, None, self.id)
+        self.app.update_unassigned_employees()
+        self.app.save_state()
+
+    def on_double_click(self, event):
+        self.app.open_add_employee_dialog(prefill_data={
+            "name": self.text,
+            "role": self.role,
+            "phone": self.phone,
+            "index": self.app.employee_boxes.index(self)
+        })
+
+class JobSiteHub:
+    def __init__(self, app, canvas, text, x, y, address=""):
+        self.app = app
+        self.canvas = canvas
+        self.text = text
+        self.address = address
+        self.width = JOB_HUB_WIDTH
+        self.height = JOB_HUB_HEIGHT
+        self.font = ("Helvetica", 12, "bold")
+        self.id = canvas.create_rectangle(x, y, x + self.width, y + self.height, fill="lightblue", tags="hub")
+        self.text_id = canvas.create_text(x + self.width / 2, y - 20, text=self.get_display_text(), font=self.font, tags=("hub", str(len(canvas.hub_list))), anchor=tk.S)
+
+        self.canvas.tag_bind(self.text_id, "<Button-3>", self.rename_hub)  # Change to right-click
+        self.erase_button_id = canvas.create_text(x + self.width - 15, y + 15, text="X", font=self.font, fill="red", tags="erase_button")
+        self.canvas.tag_bind(self.erase_button_id, "<ButtonPress-1>", self.confirm_erase_hub)
+
+        self.pm_box = self.create_snap_box()
+        self.gm_box = self.create_snap_box()
+        self.foreman_box = self.create_snap_box()
+        self.electrician_box = self.create_snap_box()
+
+        self.pm_occupied = False
+        self.gm_occupied = False
+        self.foreman_occupied = False
+        self.electrician_occupied = []
+
+        self.update_positions()
+
+    def get_display_text(self):
+        return f"{self.text}\n{self.address}"
+
+    def create_snap_box(self):
+        return self.canvas.create_rectangle(0, 0, 1, 1, fill="white", outline="black", tags="snap_box")
+
+    def update_positions(self):
+        x1, y1, x2, y2 = self.canvas.coords(self.id)
+        width = x2 - x1
+        height = y2 - y1
+
+        self.canvas.coords(self.pm_box, x1 + 10, y1 + 10, x1 + width - 10, y1 + 10 + BOX_HEIGHT)
+        self.canvas.coords(self.gm_box, x1 + 10, y1 + 20 + BOX_HEIGHT, x1 + width - 10, y1 + 20 + 2 * BOX_HEIGHT)
+        self.canvas.coords(self.foreman_box, x1 + 10, y1 + 30 + 2 * BOX_HEIGHT, x1 + width - 10, y1 + 30 + 3 * BOX_HEIGHT)
+        self.canvas.coords(self.electrician_box, x1 + 10, y1 + height - ELECTRICIAN_BOX_HEIGHT - 10, x1 + width - 10, y1 + height - 10)
+        self.canvas.coords(self.erase_button_id, x2 - 15, y1 + 15)
+
+        self.canvas.tag_raise(self.erase_button_id)  # Bring the erase button to the front
+
+        self.update_all_positions()
+
+    def confirm_erase_hub(self, event):
+        result = messagebox.askyesno("Delete Job Hub", "Are you sure you want to delete this job hub?")
+        if result:
+            self.erase_hub(event)
+
+    def update_all_positions(self):
+        self.update_electrician_positions()
+        self.update_pm_positions()
+        self.update_gm_positions()
+        self.update_foreman_positions()
+
+    def update_pm_positions(self):
+        if self.pm_occupied:
+            self.update_employee_position(self.pm_box, "PM")
+
+    def update_gm_positions(self):
+        if self.gm_occupied:
+            self.update_employee_position(self.gm_box, "GM")
+
+    def update_foreman_positions(self):
+        if self.foreman_occupied:
+            self.update_employee_position(self.foreman_box, "Foreman")
+
+    def update_employee_position(self, box, role):
+        x1, y1, x2, y2 = self.canvas.coords(box)
+        employee_id = self.get_employee_id_by_role(role)
+        if employee_id:
+            self.canvas.coords(employee_id, x1 + 35, y1)
+            circle_id = self.app.find_circle(employee_id)
+            if circle_id:
+                self.canvas.coords(circle_id, x1 + 10, y1 + 5, x1 + 20, y1 + 15)
+            self.canvas.itemconfig(employee_id, state='normal')
+            if circle_id:
+                self.canvas.itemconfig(circle_id, state='normal')
+
+    def get_employee_id_by_role(self, role):
+        for box in self.app.employee_boxes:
+            if box.role == role and box.current_snap_box and box.current_snap_box["hub"] == self:
+                return box.id
+        return None
+
+    def update_occupation(self, box, occupied, employee_id=None):
+        if box == "PM":
+            self.pm_occupied = occupied
+        elif box == "GM":
+            self.gm_occupied = occupied
+        elif box == "Foreman":
+            self.foreman_occupied = occupied
+        elif box == "Electrician" or box == "Fire Alarm":
+            if not occupied:
+                if employee_id in self.electrician_occupied:
+                    self.electrician_occupied.remove(employee_id)
+            else:
+                if employee_id and employee_id not in self.electrician_occupied:
+                    self.electrician_occupied.append(employee_id)
+            self.update_electrician_positions()
+
+    def update_electrician_positions(self):
+        x1, y1, x2, y2 = self.canvas.coords(self.electrician_box)
+        box_height = 30  # Height of each entry
+        padding = 5  # Padding between entries
+
+        valid_electricians = []
+        for employee_id in self.electrician_occupied:
+            if self.canvas.type(employee_id):
+                valid_electricians.append(employee_id)
+
+        self.electrician_occupied = valid_electricians
+
+        for index, employee_id in enumerate(self.electrician_occupied):
+            y_offset = y1 + index * (box_height + padding)
+            if self.canvas.type(employee_id) == 'text':
+                self.canvas.coords(employee_id, x1 + 35, y_offset)
+            circle_id = self.app.find_circle(employee_id)
+            if circle_id and self.canvas.type(circle_id) == 'oval':
+                self.canvas.coords(circle_id, x1 + 10, y_offset + 5, x1 + 20, y_offset + 15)
+            self.canvas.itemconfig(employee_id, state='normal')
+            if circle_id:
+                self.canvas.itemconfig(circle_id, state='normal')
+
+    def get_occupation_status(self):
+        pm_coords = self.canvas.coords(self.pm_box)
+        gm_coords = self.canvas.coords(self.gm_box)
+        foreman_coords = self.canvas.coords(self.foreman_box)
+        electrician_box_coords = self.canvas.coords(self.electrician_box)
+        return {
+            "PM": self.pm_occupied,
+            "GM": self.gm_occupied,
+            "Foreman": self.foreman_occupied,
+            "Electrician": self.electrician_occupied,
+            "ElectricianBoxCoords": electrician_box_coords,
+            "PMCoords": pm_coords,
+            "GMCoords": gm_coords,
+            "ForemanCoords": foreman_coords
+        }
+
+    def set_occupation_status(self, status):
+        self.pm_occupied = status["PM"]
+        self.gm_occupied = status["GM"]
+        self.foreman_occupied = status["Foreman"]
+        self.electrician_occupied = status.get("Electrician", [])
+        if isinstance(self.electrician_occupied, bool):
+            self.electrician_occupied = []
+        self.canvas.coords(self.electrician_box, status["ElectricianBoxCoords"])
+        self.canvas.coords(self.pm_box, status["PMCoords"])
+        self.canvas.coords(self.gm_box, status["GMCoords"])
+        self.canvas.coords(self.foreman_box, status["ForemanCoords"])
+        self.update_all_positions()
+
+    def erase_hub(self, event):
+        for box in [self.pm_box, self.gm_box, self.foreman_box, self.electrician_box]:
+            self.canvas.delete(box)
+        self.canvas.delete(self.id)
+        self.canvas.delete(self.text_id)
+        self.canvas.delete(self.erase_button_id)
+        self.app.canvas.hub_list.remove(self)
+        self.app.save_state()
+
+    def rename_hub(self, event):
+        self.rename_popup = tk.Toplevel(self.canvas)
+        self.rename_popup.title("Rename Job Site")
+
+        tk.Label(self.rename_popup, text="New Name:").pack()
+        self.new_name_entry = tk.Entry(self.rename_popup)
+        self.new_name_entry.pack()
+        self.new_name_entry.insert(0, self.text)
+
+        tk.Label(self.rename_popup, text="New Address:").pack()
+        self.new_address_entry = tk.Entry(self.rename_popup)
+        self.new_address_entry.pack()
+        self.new_address_entry.insert(0, self.address)
+
+        tk.Button(self.rename_popup, text="OK", command=self.save_new_name).pack()
+
+    def save_new_name(self):
+        new_name = self.new_name_entry.get()
+        new_address = self.new_address_entry.get()
+        if (not new_name.isspace()) and new_name != '':
+            self.text = new_name
+        if new_address != '':
+            self.address = new_address
+        self.canvas.itemconfig(self.text_id, text=self.get_display_text())
+        self.rename_popup.destroy()
+        self.app.save_state()
+
+class WhiteboardApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Drag and Drop Whiteboard")
+
+        self.root.state('zoomed')
+
+        self.main_frame = tk.Frame(root)
+        self.main_frame.pack(fill=tk.BOTH, expand=True)
+
+        self.canvas_frame = tk.Frame(self.main_frame)
+        self.canvas_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.side_frame = tk.Frame(self.main_frame, width=200)
+        self.side_frame.pack(side=tk.RIGHT, fill=tk.Y)
+
+        self.canvas = tk.Canvas(self.canvas_frame, scrollregion=(0, 0, 2000, 2000))
+        self.canvas.hub_list = []  # Initialize hub_list here
+        self.scrollbar_y = tk.Scrollbar(self.canvas_frame, orient=tk.VERTICAL, command=self.canvas.yview)
+        self.scrollbar_x = tk.Scrollbar(self.canvas_frame, orient=tk.HORIZONTAL, command=self.canvas.xview)
+        self.canvas.configure(yscrollcommand=self.scrollbar_y.set, xscrollcommand=self.scrollbar_x.set)
+
+        self.scrollbar_y.pack(side=tk.RIGHT, fill=tk.Y)
+        self.scrollbar_x.pack(side=tk.BOTTOM, fill=tk.X)
+        self.canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.employee_boxes = []
+
+        self.unassigned_listbox = tk.Listbox(self.side_frame)
+        self.unassigned_listbox.pack(fill=tk.BOTH, expand=True)
+
+        self.delete_employee_button = tk.Button(self.side_frame, text="Delete Employee", command=self.delete_employee)
+        self.delete_employee_button.pack(fill=tk.X)
+
+        self.copy_employee_button = tk.Button(self.side_frame, text="Copy Employee", command=self.copy_employee)
+        self.copy_employee_button.pack(fill=tk.X)
+
+        self.undo_button = tk.Button(self.side_frame, text="Undo Delete", command=self.undo_delete_employee)
+        self.undo_button.pack(fill=tk.X)
+
+        self.last_deleted_employee = None
+
+        self.root.bind('<Configure>', self.on_resize)
+
+        self.create_controls()
+        self.load_state()
+
+        self.canvas.bind("<Configure>", self.update_scroll_region)
+        self.canvas.bind("<MouseWheel>", self.on_mouse_wheel)
+        self.canvas.bind("<Shift-MouseWheel>", self.on_shift_mouse_wheel)
+
+        # Define default position coordinates
+        self.default_x = DEFAULT_EMPLOYEE_X
+        self.default_y = DEFAULT_EMPLOYEE_Y
+
+    def create_controls(self):
+        control_frame = tk.Frame(self.root)
+        control_frame.pack()
+
+        add_employee_button = tk.Button(control_frame, text="Add Employee", command=self.open_add_employee_dialog)
+        add_employee_button.pack(side=tk.LEFT)
+
+        add_hub_button = tk.Button(control_frame, text="Add Job Site", command=self.add_job_site_hub)
+        add_hub_button.pack(side=tk.LEFT)
+
+        restore_button = tk.Button(control_frame, text="Restore Boxes", command=self.restore_boxes)
+        restore_button.pack(side=tk.LEFT)
+
+    def open_add_employee_dialog(self, prefill_data=None):
+        self.add_employee_popup = tk.Toplevel(self.canvas)
+        self.add_employee_popup.title("Add Employee")
+        self.add_employee_popup.geometry("600x600")
+
+        tk.Label(self.add_employee_popup, text="Name:").pack()
+        self.name_entry = tk.Entry(self.add_employee_popup)
+        self.name_entry.pack()
+        if prefill_data:
+            self.name_entry.insert(0, prefill_data["name"])
+
+        tk.Label(self.add_employee_popup, text="Role:").pack()
+        self.role_var = tk.StringVar()
+        self.role_var.set("PM")
+        self.role_dropdown = tk.OptionMenu(self.add_employee_popup, self.role_var, "PM", "GM", "Foreman", "Electrician", "Fire Alarm")
+        self.role_dropdown.pack()
+        if prefill_data:
+            self.role_var.set(prefill_data["role"])
+
+        tk.Label(self.add_employee_popup, text="Phone Number:").pack()  # Change label to Phone Number
+        self.phone_entry = tk.Entry(self.add_employee_popup)
+        self.phone_entry.pack()
+        if prefill_data:
+            self.phone_entry.insert(0, prefill_data.get("phone", ""))
+
+        if prefill_data:
+            tk.Button(self.add_employee_popup, text="Save", command=lambda: self.save_edited_employee(prefill_data["index"])).pack()
+        else:
+            tk.Button(self.add_employee_popup, text="Add", command=self.add_employee_from_dialog).pack()
+
+        self.phone_entry.bind('<KeyRelease>', self.format_phone_number)
+
+    def format_phone_number(self, event):
+        value = self.phone_entry.get()
+        digits = ''.join(filter(str.isdigit, value))
+
+        if len(digits) > 6:
+            formatted = f"{digits[:3]}-{digits[3:6]}-{digits[6:10]}"
+        elif len(digits) > 3:
+            formatted = f"{digits[:3]}-{digits[3:6]}"
+        else:
+            formatted = digits
+
+        self.phone_entry.delete(0, tk.END)
+        self.phone_entry.insert(0, formatted)
+
+    def add_employee_from_dialog(self):
+        name = self.name_entry.get()
+        role = self.role_var.get()
+        phone = self.phone_entry.get()
+        if name and role:
+            self.add_employee(name=name, role=role, phone=phone)
+        self.add_employee_popup.destroy()
+
+    def save_edited_employee(self, index):
+        name = self.name_entry.get()
+        role = self.role_var.get()
+        phone = self.phone_entry.get()
+        if name and role:
+            box = self.employee_boxes[index]
+            box.text = name
+            box.role = role
+            box.phone = phone
+            box.color = ROLE_COLORS.get(role, "black")
+            self.canvas.itemconfig(box.id, text=box.get_display_text())
+            self.canvas.itemconfig(box.circle_id, fill=box.color, outline=box.color)
+            self.update_unassigned_employees()
+            self.save_state()
+        self.add_employee_popup.destroy()
+
+    def add_employee(self, name=None, role=None, phone=None, x=None, y=None, job_site=None, box=None):
+        if name and role:
+            # Use default position if x or y is not provided
+            if x is None:
+                x = self.default_x
+            if y is None:
+                y = self.default_y + len(self.employee_boxes) * 30
+            draggable_box = DraggableBox(self, self.canvas, name, role, x, y, phone, job_site, box)
+            self.employee_boxes.append(draggable_box)
+            self.update_scroll_region()
+            self.update_employee_position(name, job_site, box, draggable_box.id)
+            self.update_unassigned_employees()
+            self.save_state()
+
+    def delete_employee(self):
+        selected_indices = self.unassigned_listbox.curselection()
+        if selected_indices:
+            selected_index = selected_indices[0]
+            employee_name = self.unassigned_listbox.get(selected_index)
+            for box in self.employee_boxes:
+                if box.text == employee_name and not box.current_snap_box:
+                    self.canvas.delete(box.id)
+                    self.canvas.delete(box.circle_id)
+                    self.employee_boxes.remove(box)
+                    self.update_unassigned_employees()
+                    self.save_state()
+                    self.last_deleted_employee = {
+                        "name": box.text, "role": box.role, "phone": box.phone,
+                        "x": self.canvas.coords(box.id)[0],
+                        "y": self.canvas.coords(box.id)[1]
+                    }
+                    break
+
+    def undo_delete_employee(self):
+        if self.last_deleted_employee:
+            self.add_employee(name=self.last_deleted_employee["name"], role=self.last_deleted_employee["role"],
+                              phone=self.last_deleted_employee["phone"],
+                              x=self.last_deleted_employee["x"], y=self.last_deleted_employee["y"])
+            self.last_deleted_employee = None
+
+    def copy_employee(self):
+        selected_indices = self.unassigned_listbox.curselection()
+        if selected_indices:
+            selected_index = selected_indices[0]
+            employee_name = self.unassigned_listbox.get(selected_index)
+            for box in self.employee_boxes:
+                if box.text == employee_name and not box.current_snap_box:
+                    self.add_employee(name=f"Copy of {box.text}", role=box.role, phone=box.phone,
+                                      x=self.canvas.coords(box.id)[0], y=self.canvas.coords(box.id)[1] + GRID_SIZE)
+                    break
+
+    def add_job_site_hub(self, job_site=None, x=None, y=None, status=None):
+        if job_site is None:
+            existing_numbers = [int(hub.text.split()[-1]) for hub in self.canvas.hub_list if
+                                hub.text.startswith("Job Site")]
+            job_number = 1
+            while job_number in existing_numbers:
+                job_number += 1
+            job_site = f"Job Site {job_number}"
+
+        if x is not None and y is not None:
+            hub = JobSiteHub(self, self.canvas, job_site, x, y)
+            if status:
+                hub.set_occupation_status(status)
+            self.canvas.hub_list.append(hub)
+            self.canvas.tag_raise(hub.text_id)
+            self.bring_employee_names_to_front()
+            self.update_scroll_region()
+            self.save_state()
+            return
+
+        slot_size = (JOB_HUB_WIDTH + 40, JOB_HUB_HEIGHT + VERTICAL_SPACING)
+        canvas_width = self.canvas.winfo_width()
+        max_columns = max(1, canvas_width // slot_size[0])
+
+        existing_positions = [(self.canvas.coords(hub.id), hub) for hub in self.canvas.hub_list]
+
+        for row in range(100):
+            for col in range(max_columns):
+                x_pos = 50 + col * slot_size[0]
+                y_pos = 50 + row * slot_size[1]
+
+                overlap = False
+                for (coords, hub) in existing_positions:
+                    if (x_pos < coords[2] and x_pos + slot_size[0] > coords[0] and
+                            y_pos < coords[3] and y_pos + slot_size[1] > coords[1]):
+                        overlap = True
+                        break
+                if not overlap:
+                    x, y = x_pos, y_pos
+                    hub = JobSiteHub(self, self.canvas, job_site, x, y)
+                    if status:
+                        hub.set_occupation_status(status)
+                    self.canvas.hub_list.append(hub)
+                    self.canvas.tag_raise(hub.text_id)
+                    self.bring_employee_names_to_front()
+                    self.update_scroll_region()
+                    self.save_state()
+                    return
+
+        raise Exception("No available position for new job site hub")
+
+    def bring_employee_names_to_front(self):
+        for box in self.employee_boxes:
+            self.canvas.tag_raise(box.id)
+            self.canvas.tag_raise(box.circle_id)
+
+    def redraw_canvas(self):
+        self.canvas.update_idletasks()
+
+        canvas_width = self.canvas.winfo_width()
+        max_columns = max(1, canvas_width // (JOB_HUB_WIDTH + 40))
+
+        for i, hub in enumerate(self.canvas.hub_list):
+            x = 50 + (JOB_HUB_WIDTH + 40) * (i % max_columns)
+            y = 50 + (JOB_HUB_HEIGHT + VERTICAL_SPACING) * (i // max_columns)
+            self.canvas.coords(hub.id, x, y, x + JOB_HUB_WIDTH, y + JOB_HUB_HEIGHT)
+            hub.update_positions()
+            self.update_text_positions(hub, x, y, x + JOB_HUB_WIDTH, y + JOB_HUB_HEIGHT)
+
+        self.bring_employee_names_to_front()
+        self.update_scroll_region()
+
+    def update_text_positions(self, hub, x1, y1, x2, y2):
+        self.canvas.coords(hub.text_id, (x1 + x2) / 2, y1 - 10)
+        self.canvas.coords(hub.erase_button_id, x2 - 15, y1 + 15)
+
+    def update_scroll_region(self, event=None):
+        self.canvas.config(scrollregion=self.canvas.bbox("all"))
+
+    def on_mouse_wheel(self, event):
+        self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    def on_shift_mouse_wheel(self, event):
+        self.canvas.xview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    def on_resize(self, event):
+        self.redraw_canvas()
+
+    def find_circle(self, employee_id):
+        for box in self.employee_boxes:
+            if box.id == employee_id:
+                return box.circle_id
+        return None
+
+    def reposition_unassigned_employees(self):
+        for index, box in enumerate(self.employee_boxes):
+            if not box.current_snap_box:
+                x = DEFAULT_EMPLOYEE_X
+                y = DEFAULT_EMPLOYEE_Y + (index * GRID_SIZE)
+                x = (x // GRID_SIZE) * GRID_SIZE
+                y = (y // GRID_SIZE) * GRID_SIZE
+                self.canvas.coords(box.id, x, y)
+                self.canvas.coords(box.circle_id, x - 15, y, x - 5, y + 10)
+
+    def restore_boxes(self):
+        for hub in self.canvas.hub_list:
+            hub.pm_occupied = False
+            hub.gm_occupied = False
+            hub.foreman_occupied = False
+            hub.electrician_occupied = []
+            for box in self.employee_boxes:
+                if box.current_snap_box and box.current_snap_box["hub"] == hub:
+                    box.current_snap_box = None
+        self.update_unassigned_employees()
+
+    def save_state(self):
+        try:
+            state = {
+                "employees": [{"name": box.text, "role": box.role, "phone": getattr(box, "phone", ""),
+                               "job_site": box.current_snap_box["hub"].text if box.current_snap_box else None,
+                               "box": box.current_snap_box["box"] if box.current_snap_box else None,
+                               "x": self.canvas.coords(box.id)[0], "y": self.canvas.coords(box.id)[1]} for box in
+                              self.employee_boxes],
+                "job_sites": [{"name": hub.text, "x": self.canvas.coords(hub.id)[0], "y": self.canvas.coords(hub.id)[1],
+                               "status": hub.get_occupation_status()} for hub in self.canvas.hub_list]
+            }
+            with open('state.json', 'w') as f:
+                json.dump(state, f)
+            print(f"State saved: {state}")
+        except Exception as e:
+            print(f"Error saving state: {e}")
+
+    def load_state(self):
+        try:
+            with open('state.json', 'r') as f:
+                state = json.load(f)
+                print(f"State loaded: {state}")
+                job_site_dict = {}
+
+                # First, add all job sites
+                for job in state["job_sites"]:
+                    job["status"].setdefault("Electrician", [])
+                    hub = self.add_job_site_hub(job["name"], job["x"], job["y"], job.get("status",
+                                                                                         {"PM": False, "GM": False,
+                                                                                          "Foreman": False,
+                                                                                          "Electrician": []}))
+                    job_site_dict[job["name"]] = hub
+
+                # Then, add all employees
+                for emp in state["employees"]:
+                    job_site = emp.get("job_site")
+                    box_type = emp.get("box")
+                    x = emp.get("x", None)
+                    y = emp.get("y", None)
+                    phone = emp.get("phone", "")
+
+                    if x is None or y is None:
+                        # Provide default position if coordinates are not available
+                        x = self.default_x
+                        y = self.default_y + len(self.employee_boxes) * 30
+
+                    self.add_employee(emp["name"], emp.get("role"), phone, x, y, job_site, box_type)
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            print(f"Error loading state: {e}")
+        self.update_unassigned_employees()
+        self.reposition_unassigned_employees()
+
+    def update_employee_position(self, name, job_site, box, employee_id):
+        if job_site and box:
+            for hub in self.canvas.hub_list:
+                if hub.text == job_site:
+                    hub.update_occupation(box, True, employee_id)
+        self.save_state()
+
+    def update_unassigned_employees(self):
+        self.unassigned_listbox.delete(0, tk.END)
+        for box in self.employee_boxes:
+            if not box.current_snap_box:
+                self.unassigned_listbox.insert(tk.END, box.text)
+
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = WhiteboardApp(root)
+    root.mainloop()
+
+

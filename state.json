@@ -1,0 +1,72 @@
+{
+    "job_sites": [],
+    "employees": [
+        {
+            "name": "John Doe",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Cable Puller",
+                "Rough-In"
+            ],
+            "sst_card": "Yes",
+            "nj_license": "No",
+            "electrician_ranking": "1",
+            "job_site": null,
+            "box": null,
+            "x": null,
+            "y": null
+        },
+        {
+            "name": "Jane Smith",
+            "role": "GM",
+            "phone": "",
+            "skills": [
+                "Talk Big Game"
+            ],
+            "sst_card": "No",
+            "nj_license": "Yes",
+            "electrician_ranking": "1",
+            "job_site": null,
+            "box": null,
+            "x": null,
+            "y": null
+        },
+        {
+            "name": "Mike Brown",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Fart",
+                "Is Gay"
+            ],
+            "sst_card": "Yes",
+            "nj_license": "No",
+            "electrician_ranking": "1",
+            "job_site": null,
+            "box": null,
+            "x": null,
+            "y": null
+        },
+        {
+            "name": "Emily Davis",
+            "role": "Foreman",
+            "phone": "",
+            "skills": [],
+            "sst_card": "No",
+            "nj_license": "Yes",
+            "electrician_ranking": "1",
+            "job_site": null,
+            "box": null,
+            "x": null,
+            "y": null
+        }
+    ],
+    "scale": 1.0,
+    "canvas_transform": [
+        0,
+        0
+    ],
+    "scroll_x": 0,
+    "scroll_y": 0
+}
