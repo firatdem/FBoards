@@ -34,17 +34,9 @@ To install FBoards, follow these steps:
 
 ## Usage
 
-1. Open the application in your web browser.
-2. Create a new board or load an existing one.
-3. Use the available tools to add and modify elements on the board.
-4. Collaborate with others in real-time.
+1. Open the application on your desktop.
+2. Create a new board in the app or create one using the Excel2Json tool.
+3. Drag and drop to add and employees along the job sites.
+4. Collaborate with others in real-time using a shared folder.
 
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes and push the branch.
-4. Open a Pull Request with a description of your changes.
 
