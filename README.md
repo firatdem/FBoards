@@ -39,5 +39,6 @@ To install FBoards, follow these steps:
 3. Drag and drop to add and employees along the job sites.
 4. Collaborate with others in real-time using a shared folder.
 
-![image](https://github.com/user-attachments/assets/91319a40-2c04-42ae-aaf1-11d3fdb94165)
+![image](https://github.com/user-attachments/assets/94cab73f-d8de-4262-9d02-abc7ede028a1)
+
 
