@@ -1,4 +1,4 @@
-# FBoards
+# FBoards V.01
 
 **FBoards** is a powerful and flexible whiteboard application designed for collaboration and team planning. It allows users to create, manage, and control man power along job sites.
 
