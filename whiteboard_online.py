@@ -120,6 +120,10 @@ class WhiteboardApp:
         self.skills_filter.pack(fill=tk.X, padx=5, pady=5)
         self.skills_filter_var.trace("w", lambda name, index, mode: self.update_employee_listbox())
 
+        self.job_notes = {}  # Dictionary to store notes for job sites
+
+        self.tooltip = None
+
         # Show all employees checkbox
         self.show_all_var = tk.BooleanVar()
         self.show_all_checkbox = tk.Checkbutton(self.side_frame, text="Show All Employees", variable=self.show_all_var,
@@ -156,12 +160,225 @@ class WhiteboardApp:
         self.default_x = DEFAULT_EMPLOYEE_X
         self.default_y = DEFAULT_EMPLOYEE_Y
 
+        # Placeholder for the loading screen
+        self.loading_screen = None
+
         self.create_controls()
         self.load_state()
+
+        # Apply colors based on employee status after loading the state
+        self.apply_status_colors()
+        #self.create_sticky_notes() #already generated in load_state()
 
         # Apply the default zoom scale
         self.scale = DEFAULT_ZOOM_SCALE
         self.apply_zoom()
+
+    def rename_hub(self, hub):
+        """Rename the given JobSiteHub instance."""
+        self.rename_popup = tk.Toplevel(self.canvas)
+        self.rename_popup.title("Rename Job Site")
+
+        # Set the position using the helper function
+        self.set_dialog_position(self.rename_popup)
+
+        tk.Label(self.rename_popup, text="New Name:").pack()
+        self.new_name_entry = tk.Entry(self.rename_popup)
+        self.new_name_entry.pack()
+        self.new_name_entry.insert(0, hub.text)  # Insert the current hub name
+
+        tk.Label(self.rename_popup, text="New Address:").pack()
+        self.new_address_entry = tk.Entry(self.rename_popup)
+        self.new_address_entry.pack()
+        self.new_address_entry.insert(0, hub.address)  # Insert the current hub address
+
+        tk.Button(self.rename_popup, text="OK", command=lambda: self.save_new_name(hub)).pack()
+
+    def save_new_name(self, hub):
+        """Save the new name and address for the given JobSiteHub instance."""
+        new_name = self.new_name_entry.get().strip()
+        new_address = self.new_address_entry.get().strip()
+
+        if new_name:
+            hub.text = new_name
+            self.canvas.itemconfig(hub.text_id, text=new_name)  # Update the hub's displayed name
+        if new_address:
+            hub.address = new_address
+
+        self.rename_popup.destroy()
+        self.save_state()  # Assuming you want to save the new state immediately
+
+    def set_dialog_position(self, dialog, x_offset=100, y_offset=100):
+        """
+        Set the position of a dialog window relative to the root window.
+
+        Parameters:
+        dialog (tk.Toplevel): The Toplevel window to position.
+        x_offset (int): Horizontal offset from the root window.
+        y_offset (int): Vertical offset from the root window.
+        """
+        root_x = self.root.winfo_x()
+        root_y = self.root.winfo_y()
+        dialog.geometry(f"+{root_x + x_offset}+{root_y + y_offset}")
+
+    def show_tooltip(self, event, job_name):
+        # Read the note from the JSON data
+        note_text = None
+        try:
+            with open(self.shared_file_path, 'r') as f:
+                data = json.load(f)
+                for job in data['job_sites']:
+                    if job['name'] == job_name:
+                        note_text = job.get('note')
+                        break
+        except Exception as e:
+            print(f"Error reading JSON file for tooltip: {e}")
+
+        # If no note is found, provide a default message
+        if not note_text:
+            note_text = "No notes available for this job site."
+
+        # Create a tooltip as a Toplevel window
+        if self.tooltip:
+            self.tooltip.destroy()
+        self.tooltip = tk.Toplevel(self.canvas)
+        self.tooltip.wm_overrideredirect(True)  # Remove window decorations (title bar, etc.)
+        self.tooltip.wm_geometry(f"+{event.x_root + 30}+{event.y_root + 10}")  # Position near the cursor
+
+        label = tk.Label(self.tooltip, text=note_text, background="lightyellow", relief='solid', borderwidth=1)
+        label.pack()
+
+    def hide_tooltip(self, event):
+        if self.tooltip:
+            self.tooltip.destroy()
+
+    def handle_note_click(self, job_name):
+        if job_name in self.job_notes and "note" in self.job_notes[job_name]:
+            self.edit_or_delete_note_popup(job_name)
+        else:
+            self.add_new_note_popup(job_name)
+
+    def add_new_note_popup(self, job_name):
+        self.note_popup = tk.Toplevel(self.canvas)
+        self.note_popup.title(f"Add Note to {job_name}")
+
+        # Set the position using the helper function
+        self.set_dialog_position(self.note_popup)
+
+        tk.Label(self.note_popup, text="Enter note:").pack()
+        self.note_text_entry = tk.Text(self.note_popup, wrap=tk.WORD, height=5, width=40)
+        self.note_text_entry.pack()
+
+        tk.Button(self.note_popup, text="Save", command=lambda: self.save_new_note_from_popup(job_name)).pack()
+        self.save_state()
+
+
+    def edit_or_delete_note_popup(self, job_name):
+        self.note_popup = tk.Toplevel(self.canvas)
+        self.note_popup.title(f"Edit/Delete Note for {job_name}")
+
+        # Set the position using the helper function
+        self.set_dialog_position(self.note_popup)
+
+        current_note = self.job_notes[job_name]["note"]
+
+        tk.Label(self.note_popup, text="Edit note:").pack()
+        self.note_text_entry = tk.Text(self.note_popup, wrap=tk.WORD, height=5, width=40)
+        self.note_text_entry.insert(tk.END, current_note)
+        self.note_text_entry.pack()
+
+        tk.Button(self.note_popup, text="Save", command=lambda: self.save_new_note_from_popup(job_name)).pack()
+        tk.Button(self.note_popup, text="Delete", command=lambda: self.delete_note_from_popup(job_name)).pack()
+        self.save_state()
+
+    def save_new_note_from_popup(self, job_name):
+        note_text = self.note_text_entry.get("1.0", tk.END).strip()
+        if note_text:
+            # Add or update the note in the job_notes dictionary
+            self.job_notes[job_name]["note"] = note_text
+            # Update the note icon to yellow
+            self.canvas.itemconfig(self.job_notes[job_name]["id"], fill="yellow")
+        self.note_popup.destroy()
+        self.save_state()
+
+    def delete_note_from_popup(self, job_name):
+        if job_name in self.job_notes:
+            note_id = self.job_notes[job_name]["id"]
+
+            # Clear the fill color to remove the yellow color
+            self.canvas.itemconfig(note_id, fill="", outline="black")  # Reset to default outline, no fill
+
+            # Remove the note from the job_notes dictionary
+            del self.job_notes[job_name]
+
+            self.save_state()
+            self.reload_board()
+        else:
+            print(f"Job name '{job_name}' not found in job_notes.")
+        self.note_popup.destroy()
+
+    def create_sticky_notes(self):
+        square_size = 30  # Define the size of the square in pixels
+
+        # Load the JSON data
+        with open(self.shared_file_path, 'r') as f:
+            state = json.load(f)
+
+        for hub in self.canvas.hub_list:
+            job_name = hub.text
+            job_coords = self.canvas.coords(hub.id)
+            if job_coords:
+                x, y = job_coords[0], job_coords[1]
+
+                # Get the note for this job site from the JSON data
+                job_site_data = next((site for site in state["job_sites"] if site["name"] == job_name), None)
+                note_text = job_site_data.get("note", "") if job_site_data else ""
+
+                # Check if the job site has a note
+                if note_text:
+                    # Create a small square sticky note icon with yellow fill
+                    note_icon = self.canvas.create_rectangle(
+                        x + 10, y - square_size / 2,  # Top-left corner
+                        x + 10 + square_size, y + square_size / 2,  # Bottom-right corner
+                        fill="yellow"
+                    )
+                else:
+                    # Create the same square without yellow fill
+                    note_icon = self.canvas.create_rectangle(
+                        x + 10, y - square_size / 2,  # Top-left corner
+                        x + 10 + square_size, y + square_size / 2,  # Bottom-right corner
+                        outline="black",  # Set outline color if needed
+                        fill=""  # No fill color
+                    )
+
+                # Bind click event to handle note editing
+                self.canvas.tag_bind(note_icon, "<Button-1>", lambda event, name=job_name: self.handle_note_click(name))
+
+                # Bind hover event to show tooltip
+                if note_text:
+                    self.canvas.tag_bind(note_icon, "<Enter>",
+                                         lambda event, name=job_name: self.show_tooltip(event, name))
+
+                    self.canvas.tag_bind(note_icon, "<Leave>", self.hide_tooltip)
+
+                # Store the note's ID
+                self.job_notes[job_name] = {"id": note_icon, "note": note_text}
+
+    def apply_status_colors(self):
+        for box in self.employee_boxes:
+            self.update_box_color_based_on_status(box)
+
+    def update_box_color_based_on_status(self, box):
+        if box.current_status == "Sick":
+            self.canvas.itemconfig(box.id, fill="#006400")  # Set text color to yellow for Sick status
+        elif box.current_status == "Vacation":
+            self.canvas.itemconfig(box.id, fill="blue")  # Set text color to blue for Vacation status
+        else:  # On-site or any other status
+            self.canvas.itemconfig(box.id, fill="black")  # Reset text color to black (default)
+
+    def reset_box_color(self, box, color):
+        self.canvas.itemconfig(box.id, fill=color)
+        self.canvas.itemconfig(box.circle_id, outline=color)
 
     def force_employees_to_correct_positions(self):
         """Force employees back to their correct positions based on the job site hub coordinates and their associations in the JSON file."""
@@ -290,6 +507,7 @@ class WhiteboardApp:
         self.apply_scale()
 
     def apply_scale(self):
+
         for box in self.employee_boxes:
             current_font_size = box.font[1]
             new_font_size = int(current_font_size * self.scale)
@@ -305,6 +523,24 @@ class WhiteboardApp:
 
         for hub in self.canvas.hub_list:
             hub.update_positions(self.scale)
+
+
+        # Apply fixed-size positioning to sticky notes
+        square_size = 10  # Fixed size for the square
+        offset_x = -20  # Horizontal offset to the right
+        offset_y = -20  # Vertical offset (optional)
+
+        for job_name, note_data in self.job_notes.items():
+            hub = next((h for h in self.canvas.hub_list if h.text == job_name), None)
+            if hub and note_data["id"]:
+                job_coords = self.canvas.coords(hub.id)
+                if job_coords:
+                    x1, y1, x2, y2 = job_coords  # Right edge of the hub
+                    self.canvas.coords(
+                        note_data["id"],
+                        x2 + offset_x, y1 + offset_y - square_size / 2,  # Right edge + offset
+                        x2 + offset_x + square_size, y1 + offset_y + square_size / 2  # Bottom-right corner
+                    )
 
     def on_focus_in(self, event):
         # Debug print statements
@@ -360,7 +596,7 @@ class WhiteboardApp:
         add_employee_button = ttk.Button(control_frame, text="Add Employee", command=self.open_add_employee_dialog)
         add_employee_button.pack(side=tk.LEFT, padx=5, pady=5)
 
-#NEED TO TEST THIS OUT FOR PRESENTATION
+
         add_hub_button = ttk.Button(control_frame, text="Add Job Site", command=self.add_job_site_hub)
         add_hub_button.pack(side=tk.LEFT, padx=5, pady=5)
 
@@ -369,7 +605,7 @@ class WhiteboardApp:
         #undo_button.pack(side=tk.LEFT, padx=5, pady=5)
 
         # Inside your create_controls method, replace the reload button setup with:
-        reload_button = ttk.Button(control_frame, text="Reload", command=self.reload_board_twice)
+        reload_button = ttk.Button(control_frame, text="Reload", command=self.reload_board)
         reload_button.pack(side=tk.LEFT, padx=5, pady=5)
 
     def take_screenshot(self):
@@ -385,6 +621,24 @@ class WhiteboardApp:
         # Save the image to a file
         image.save("screenshot.png")
         print("Screenshot taken and saved as screenshot.png")
+
+    def show_loading_screen(self):
+        """Display a loading overlay on the canvas while the board reloads."""
+        self.loading_overlay = tk.Frame(self.canvas, bg='gray', width=self.canvas.winfo_width(),
+                                        height=self.canvas.winfo_height())
+        self.loading_overlay.place(relx=0, rely=0, relwidth=1, relheight=1)
+
+        label = tk.Label(self.loading_overlay, text="Loading...", font=("Helvetica", 24), bg='gray', fg='white')
+        label.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+
+        self.canvas.update_idletasks()
+
+    def close_loading_screen(self):
+        """Remove the loading overlay from the canvas after the board reloads."""
+        if self.loading_overlay:
+            self.loading_overlay.destroy()
+            self.loading_overlay = None  # Reset the reference to None
+            self.canvas.update_idletasks()
 
     def reload_board(self):
         """Reload the board by clearing and re-reading from the JSON file."""
@@ -404,6 +658,7 @@ class WhiteboardApp:
         # Force employees to their correct positions after reloading the state
         #self.force_employees_to_correct_positions()
         self.apply_scale()
+        self.apply_status_colors()
 
     def reload_board_spec(self, entities_to_reload=None):
         """Reload only specific entities from the JSON file."""
@@ -518,6 +773,9 @@ class WhiteboardApp:
         self.add_employee_popup.title("Employee Profile")
         self.add_employee_popup.geometry("400x600")  # Adjust size as needed
 
+        # Set the position using the helper function
+        self.set_dialog_position(self.add_employee_popup)
+
         # Main frame
         main_frame = ttk.Frame(self.add_employee_popup, padding="10 10 10 10")
         main_frame.pack(fill=tk.BOTH, expand=True)
@@ -620,6 +878,19 @@ class WhiteboardApp:
         if prefill_data:
             self.nj_ny_certified_var.set(prefill_data.get("nj_ny_certified", "NJ"))
 
+        # Current Status Onsite/Sick/Vaca
+        current_status_frame = ttk.Frame(main_frame)
+        current_status_frame.pack(fill=tk.X, pady=5)
+        tk.Label(current_status_frame, text="Current Status:").pack(side=tk.LEFT)
+        self.current_status_var = tk.StringVar()
+        self.current_status_var.set("On-site")
+        self.current_status_dropdown = tk.OptionMenu(current_status_frame, self.current_status_var, "On-site",
+                                                    "Sick", "Vacation")
+        self.current_status_dropdown.pack(fill=tk.X, expand=True)
+        if prefill_data:
+            self.current_status_var.set(prefill_data.get("current_status", "On-Site"))
+
+
         # Phone Number
         phone_frame = ttk.Frame(main_frame)
         phone_frame.pack(fill=tk.X, pady=5)
@@ -690,12 +961,13 @@ class WhiteboardApp:
         sst_card = self.sst_card_var.get()
         nj_ny_certified = self.nj_ny_certified_var.get()
         worker_status = self.worker_status_var.get()
+        current_status = self.current_status_var.get()
         electrician_rank = self.electrician_rank_var.get()
 
         if name and role:
             self.add_employee(name=name, role=role, skills=[skills], electrician_rank=electrician_rank,
                               certifications=certifications,
-                              sst_card=sst_card, worker_status=worker_status, nj_ny_certified=nj_ny_certified,
+                              sst_card=sst_card, worker_status=worker_status, current_status=current_status, nj_ny_certified=nj_ny_certified,
                               phone=phone)
         self.add_employee_popup.destroy()
 
@@ -708,6 +980,7 @@ class WhiteboardApp:
         sst_card = self.sst_card_var.get()
         nj_ny_certified = self.nj_ny_certified_var.get()
         worker_status = self.worker_status_var.get()
+        current_status = self.current_status_var.get()
         electrician_rank = self.electrician_rank_var.get()
 
         if name and role:
@@ -720,6 +993,7 @@ class WhiteboardApp:
             box.sst_card = sst_card
             box.nj_ny_certified = nj_ny_certified
             box.worker_status = worker_status
+            box.current_status = current_status
             box.electrician_rank = electrician_rank
             box.color = ROLE_COLORS.get(role, "black")
 
@@ -732,10 +1006,11 @@ class WhiteboardApp:
             self.update_unassigned_employees()
             self.save_state()
         self.add_employee_popup.destroy()
+        self.apply_status_colors()
 
     def add_employee(self, name=None, role=None, phone=None, x=None, y=None, job_site=None, box=None, skills=None,
                      sst_card="No", nj_ny_certified="NJ", electrician_rank="1", certifications=None,
-                     worker_status="Journeyman"):
+                     worker_status="Journeyman", current_status = None):
         if name and role:
             # Use default position if x or y is not provided
             if x is None:
@@ -745,7 +1020,7 @@ class WhiteboardApp:
             # Create a new DraggableBox with the provided attributes
             draggable_box = DraggableBox(
                 self, self.canvas, name, role, x, y, phone, job_site, box, skills, sst_card,
-                nj_ny_certified, electrician_rank, certifications, worker_status
+                nj_ny_certified, electrician_rank, certifications, worker_status, current_status
             )
             # Update the display text based on role
             if role in ("Electrician", "Fire Alarm Electrician", "Roughing Electrician"):
@@ -758,6 +1033,7 @@ class WhiteboardApp:
             self.update_employee_position(name, job_site, box, draggable_box.id)
             self.update_unassigned_employees()
             self.save_state()
+            self.apply_status_colors()
 
     def delete_employee(self):
         selected_indices = self.unassigned_listbox.curselection()
@@ -808,7 +1084,8 @@ class WhiteboardApp:
                         nj_ny_certified=box.nj_ny_certified,
                         electrician_rank=box.electrician_rank,
                         certifications=box.certifications,
-                        worker_status=box.worker_status
+                        worker_status=box.worker_status,
+                        current_status=box.current_status
                     )
                     self.apply_scale()
                     break
@@ -920,6 +1197,7 @@ class WhiteboardApp:
                         "electrician_rank": box.electrician_rank,
                         "certifications": box.certifications,
                         "worker_status": box.worker_status,
+                        "current_status": box.current_status,
                         "job_site": box.current_snap_box["hub"].text if box.current_snap_box else None,
                         "box": box.current_snap_box["box"] if box.current_snap_box else None,
                         "x": self.canvas.coords(box.id)[0],
@@ -931,7 +1209,8 @@ class WhiteboardApp:
                         "name": hub.text,
                         "x": self.canvas.coords(hub.id)[0],
                         "y": self.canvas.coords(hub.id)[1],
-                        "status": hub.get_occupation_status()
+                        "status": hub.get_occupation_status(),
+                        "note": self.job_notes.get(hub.text, {}).get("note", ""),  # Save note text if it exists
                     } for hub in self.canvas.hub_list
                 ],
                 "scale": self.scale,
@@ -942,14 +1221,12 @@ class WhiteboardApp:
             with open(self.shared_file_path, 'w') as f:
                 json.dump(state, f, indent=4)
             print(f"State saved: {state}")
-            #self.reload_board()       #THIS CAUSES THE IMPROPER COORDINATE PASS
-                                      #SEEMS THAT RELOAD CAUSES ELECTRICIAN BOX TO NOT BE PLACED
-                                      #CORRECTLY.
         except Exception as e:
             print(f"Error saving state: {e}")
 
     def load_state(self):
         self.is_loading = True  # Start loading
+        self.show_loading_screen()  # Show loading screen
         try:
             with open(self.shared_file_path, 'r') as f:
                 state = json.load(f)
@@ -958,7 +1235,7 @@ class WhiteboardApp:
 
             job_site_dict = {}
 
-            # First, add all job sites
+            # First, add all job sites and repopulate notes
             for job in state["job_sites"]:
                 print(f"Loading job site: {job['name']}")
                 job["status"].setdefault("Electrician", [])
@@ -974,6 +1251,11 @@ class WhiteboardApp:
                     })
                 )
                 job_site_dict[job["name"]] = hub
+
+                # Repopulate the job_notes dictionary with the loaded notes
+                if job.get("note"):
+                    self.job_notes[job["name"]] = {"note": job["note"],
+                                                   "id": None}  # id will be set when notes are created
 
             # Then, add all employees
             for emp in state["employees"]:
@@ -1002,7 +1284,8 @@ class WhiteboardApp:
                     nj_ny_certified=emp.get("nj_ny_certified", "NJ"),
                     electrician_rank=emp.get("electrician_rank", "0"),
                     certifications=emp.get("certifications", []),
-                    worker_status=emp.get("worker_status", "Journeyman")
+                    worker_status=emp.get("worker_status", "Journeyman"),
+                    current_status=emp.get("current_status", "On-site")
                 )
                 self.employee_boxes.append(draggable_box)
 
@@ -1021,13 +1304,18 @@ class WhiteboardApp:
 
             # Apply the current scale to all elements
             self.apply_scale()
-            self.update_unassigned_employees()  # Ensure the listbox is updated
 
+            # Now create sticky notes based on the state
+            self.create_sticky_notes()
+
+            # Ensure the listbox is updated
+            self.update_unassigned_employees()
 
         except Exception as e:
             print(f"Error loading state: {e}")
         finally:
             self.is_loading = False  # End loading
+            self.close_loading_screen()
 
     def update_employee_position(self, name, job_site, box, employee_id):
         if job_site and box:

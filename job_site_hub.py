@@ -54,6 +54,7 @@ class JobSiteHub:
         self.canvas.tag_unbind(self.erase_button_id, "<ButtonPress-1>")
         self.canvas.tag_unbind(self.collapse_button_id, "<ButtonPress-1>")
 
+
     def get_display_text(self):
         return f"{self.text}{self.address}" #Address will probably be removed, leave as is for now
 
@@ -232,20 +233,7 @@ class JobSiteHub:
         self.app.save_state()
 
     def rename_hub(self, event):
-        self.rename_popup = tk.Toplevel(self.canvas)
-        self.rename_popup.title("Rename Job Site")
-
-        tk.Label(self.rename_popup, text="New Name:").pack()
-        self.new_name_entry = tk.Entry(self.rename_popup)
-        self.new_name_entry.pack()
-        self.new_name_entry.insert(0, self.text)
-
-        tk.Label(self.rename_popup, text="New Address:").pack()
-        self.new_address_entry = tk.Entry(self.rename_popup)
-        self.new_address_entry.pack()
-        self.new_address_entry.insert(0, self.address)
-
-        tk.Button(self.rename_popup, text="OK", command=self.save_new_name).pack()
+        self.app.rename_hub(self)  # Call the method from the WhiteboardApp instance
 
     def save_new_name(self):
         new_name = self.new_name_entry.get()

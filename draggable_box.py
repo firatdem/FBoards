@@ -275,5 +275,6 @@ class DraggableBox:
             "certifications": self.certifications,
             "nj_ny_certified": self.nj_ny_certified,
             "worker_status": self.worker_status,
+            "current_status": self.current_status,
             "index": self.app.employee_boxes.index(self)
         })
