@@ -105,10 +105,11 @@ class WhiteboardApp:
         self.search_entry.bind("<KeyRelease>", self.update_employee_listbox)
 
         # Role filter
-        tk.Label(self.side_frame, text="Filter by Role:").pack()
+        tk.Label(self.side_frame, text="Filter by Certificate:").pack()
         self.role_var = tk.StringVar(value="All")
-        roles = ["All", "PM", "GM", "Foreman", "Electrician", "Fire Alarm Electrician", "Roughing Electrician"]
-        self.role_filter = ttk.OptionMenu(self.side_frame, self.role_var, "All", *roles)
+        roles = ["All", "PM", "GM", "Foreman", "Electrician", "Fire Alarm Electrician", "Roughing Electrician"] #Did not want to remove in case used somewhere else
+        certs = ["All", "SST", "Journeyman", "Contractor", "OSHA", "NJ Certified", "NY Certified", "Both"]
+        self.role_filter = ttk.OptionMenu(self.side_frame, self.role_var, "All", *certs)
         self.role_filter.pack(fill=tk.X, padx=5, pady=5)
         self.role_var.trace("w", lambda name, index, mode: self.update_employee_listbox())
 
@@ -451,18 +452,58 @@ class WhiteboardApp:
     def update_employee_listbox(self, event=None):
         self.unassigned_listbox.delete(0, tk.END)
         search_text = self.search_entry.get().lower()
-        role_filter = self.role_var.get()
+        cert_filter = self.role_var.get()  # Used for filtering by certificate
         skills_filter = self.skills_filter_var.get()
         show_all = self.show_all_var.get()
 
         for box in self.employee_boxes:
-            print(f"Checking box: {box.text}, Role: {box.role}, Skills: {box.skills}")  # Debug output
-            if show_all or not box.current_snap_box:
-                # Filtering logic
-                if (search_text in box.text.lower() and
-                        (role_filter == "All" or role_filter == box.role) and
-                        (skills_filter == "All" or skills_filter in box.skills)):
-                    self.unassigned_listbox.insert(tk.END, box.text)
+            print(
+                f"Checking box: {box.text}, Role: {box.role}, Skills: {box.skills}, Certifications: {box.certifications}, SST Card: {box.sst_card}, Worker Status: {box.worker_status}, NJ/NY Certified: {box.nj_ny_certified}"
+            )  # Debug output
+
+            # Start with the assumption that the employee should be shown
+            should_show = show_all or not box.current_snap_box
+
+            # Apply search text filtering
+            if search_text and search_text not in box.text.lower():
+                should_show = False
+
+            # Apply certificate filtering
+            if cert_filter != "All":
+                if cert_filter == "SST":
+                    if box.sst_card != "Yes":
+                        should_show = False
+                elif cert_filter == "Journeyman":
+                    if box.worker_status != "Journeyman":
+                        should_show = False
+                elif cert_filter == "Contractor":
+                    if box.worker_status != "Contractor":
+                        should_show = False
+                elif cert_filter == "OSHA":
+                    if "OSHA Card" not in box.certifications:
+                        should_show = False
+                elif cert_filter == "NJ Certified":
+                    if box.nj_ny_certified != "NJ":
+                        should_show = False
+                elif cert_filter == "NY Certified":
+                    if box.nj_ny_certified != "NY":
+                        should_show = False
+                elif cert_filter == "Both":
+                    if box.nj_ny_certified not in ["NY", "NJ"]:
+                        should_show = False
+                else:
+                    # For other certifications, check if cert_filter is in box.certifications
+                    if cert_filter not in box.certifications:
+                        should_show = False
+
+            # Apply skills filtering
+            if skills_filter != "All":
+                if skills_filter not in box.skills:
+                    should_show = False
+
+            # If all conditions are met, add to the listbox
+            if should_show:
+                self.unassigned_listbox.insert(tk.END, box.text)
 
     def start_file_watcher(self):
         event_handler = JSONFileHandler(self, self.shared_file_path)  # Pass the file path here
@@ -484,7 +525,7 @@ class WhiteboardApp:
         self.search_entry.delete(0, tk.END)  # Clear the search text
         self.role_var.set("All")  # Reset the role filter to "All"
         self.skills_filter_var.set("All")  # Reset the skills filter to "All"
-        self.show_all_var.set(False)  # Uncheck the "Show All Employees" checkbox
+        self.show_all_var.set(True)  # Uncheck the "Show All Employees" checkbox
         self.update_employee_listbox()  # Update the employee listbox with the reset filters
 
     def redraw_canvas(self):
@@ -769,149 +810,166 @@ class WhiteboardApp:
         self.unassigned_listbox.bind('<<ListboxSelect>>', self.on_listbox_select)
 
     def open_add_employee_dialog(self, prefill_data=None):
-        self.add_employee_popup = tk.Toplevel(self.canvas)
-        self.add_employee_popup.title("Employee Profile")
-        self.add_employee_popup.geometry("400x600")  # Adjust size as needed
+        add_employee_popup = tk.Toplevel(self.canvas)
+        add_employee_popup.title("Employee Profile")
+        add_employee_popup.geometry("400x600")  # Adjust size as needed
 
         # Set the position using the helper function
-        self.set_dialog_position(self.add_employee_popup)
+        self.set_dialog_position(add_employee_popup)
 
         # Main frame
-        main_frame = ttk.Frame(self.add_employee_popup, padding="10 10 10 10")
+        main_frame = ttk.Frame(add_employee_popup, padding="10 10 10 10")
         main_frame.pack(fill=tk.BOTH, expand=True)
 
         # Name
         name_frame = ttk.Frame(main_frame)
         name_frame.pack(fill=tk.X, pady=5)
         tk.Label(name_frame, text="Name:").pack(side=tk.LEFT)
-        self.name_entry = tk.Entry(name_frame)
-        self.name_entry.pack(fill=tk.X, expand=True)
+        name_entry = tk.Entry(name_frame)
+        name_entry.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.name_entry.insert(0, prefill_data["name"])
+            name_entry.insert(0, prefill_data["name"])
 
         # Role
         role_frame = ttk.Frame(main_frame)
         role_frame.pack(fill=tk.X, pady=5)
         tk.Label(role_frame, text="Role:").pack(side=tk.LEFT)
-        self.role_var = tk.StringVar()
-        self.role_var.set("PM")
+        role_var = tk.StringVar()
+        role_var.set("PM")
         roles = ["PM", "GM", "Foreman", "Electrician", "Fire Alarm Electrician", "Roughing Electrician"]
-        self.role_dropdown = tk.OptionMenu(role_frame, self.role_var, *roles, command=self.update_skill_dropdown)
-        self.role_dropdown.pack(fill=tk.X, expand=True)
+        role_dropdown = tk.OptionMenu(role_frame, role_var, *roles,
+                                      command=lambda value: self.update_skill_dropdown(value, skills_var,
+                                                                                       skills_dropdown))
+        role_dropdown.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.role_var.set(prefill_data["role"])
+            role_var.set(prefill_data["role"])
 
         # Skill
         skill_frame = ttk.Frame(main_frame)
         skill_frame.pack(fill=tk.X, pady=5)
         tk.Label(skill_frame, text="Skill:").pack(side=tk.LEFT)
-        # Initialize skills_var as StringVar
-        self.skills_var = tk.StringVar()
-        # Initialize skills_dropdown as OptionMenu
-        self.skills_dropdown = tk.OptionMenu(skill_frame, self.skills_var, "")
-        self.skills_dropdown.pack(fill=tk.X, expand=True)
-        # Update skill options based on selected role
-        self.update_skill_dropdown(self.role_var.get())
-
-        # Prefill data if available
+        skills_var = tk.StringVar()
+        skills_dropdown = tk.OptionMenu(skill_frame, skills_var, "")
+        skills_dropdown.pack(fill=tk.X, expand=True)
+        self.update_skill_dropdown(role_var.get(), skills_var, skills_dropdown)
         if prefill_data:
-            self.skills_var.set(prefill_data.get("skills", [""])[0])  # Handle list to single value
+            skills_var.set(prefill_data.get("skills", [""])[0])  # Handle list to single value
 
         # Electrician Rank
         electrician_rank_frame = ttk.Frame(main_frame)
         electrician_rank_frame.pack(fill=tk.X, pady=5)
         tk.Label(electrician_rank_frame, text="Electrician Rank:").pack(side=tk.LEFT)
-        self.electrician_rank_var = tk.StringVar()
-        self.electrician_rank_var.set("0")
-        self.electrician_rank_dropdown = tk.OptionMenu(electrician_rank_frame, self.electrician_rank_var, "0", "1", "2",
-                                                       "3", "4",
-                                                       "5")
-        self.electrician_rank_dropdown.pack(fill=tk.X, expand=True)
+        electrician_rank_var = tk.StringVar()
+        electrician_rank_var.set("0")
+        electrician_rank_dropdown = tk.OptionMenu(electrician_rank_frame, electrician_rank_var, "0", "1", "2", "3", "4",
+                                                  "5")
+        electrician_rank_dropdown.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.electrician_rank_var.set(prefill_data.get("electrician_rank", "0"))
+            electrician_rank_var.set(prefill_data.get("electrician_rank", "0"))
 
         # Certifications
         cert_frame = ttk.Frame(main_frame)
         cert_frame.pack(fill=tk.X, pady=5)
         tk.Label(cert_frame, text="Certifications:").pack(side=tk.LEFT)
-        self.certifications_listbox = tk.Listbox(cert_frame, selectmode=tk.MULTIPLE, height=5)
-        certifications = ["Placeholder1", "Placeholder2", "Placeholder3", "Placeholder4", "Placeholder5"]
+        certifications_listbox = tk.Listbox(cert_frame, selectmode=tk.MULTIPLE, height=5)
+        certifications = ["OSHA Card", "Placeholder2", "Placeholder3", "Placeholder4", "Placeholder5"]
         for cert in certifications:
-            self.certifications_listbox.insert(tk.END, cert)
-        self.certifications_listbox.pack(fill=tk.X, expand=True)
+            certifications_listbox.insert(tk.END, cert)
+        certifications_listbox.pack(fill=tk.X, expand=True)
         if prefill_data:
             for cert in prefill_data.get("certifications", []):
                 idx = certifications.index(cert)
-                self.certifications_listbox.select_set(idx)
+                certifications_listbox.select_set(idx)
 
         # SST Card
         sst_frame = ttk.Frame(main_frame)
         sst_frame.pack(fill=tk.X, pady=5)
         tk.Label(sst_frame, text="SST Card:").pack(side=tk.LEFT)
-        self.sst_card_var = tk.StringVar()
-        self.sst_card_var.set("No")
-        self.sst_card_dropdown = tk.OptionMenu(sst_frame, self.sst_card_var, "Yes", "No")
-        self.sst_card_dropdown.pack(fill=tk.X, expand=True)
+        sst_card_var = tk.StringVar()
+        sst_card_var.set("No")
+        sst_card_dropdown = tk.OptionMenu(sst_frame, sst_card_var, "Yes", "No")
+        sst_card_dropdown.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.sst_card_var.set(prefill_data.get("sst_card", "No"))
+            sst_card_var.set(prefill_data.get("sst_card", "No"))
 
         # Worker Status
         worker_status_frame = ttk.Frame(main_frame)
         worker_status_frame.pack(fill=tk.X, pady=5)
         tk.Label(worker_status_frame, text="Worker Status:").pack(side=tk.LEFT)
-        self.worker_status_var = tk.StringVar()
-        self.worker_status_var.set("Journeyman")
-        self.worker_status_dropdown = tk.OptionMenu(worker_status_frame, self.worker_status_var, "Journeyman",
-                                                    "Contractor")
-        self.worker_status_dropdown.pack(fill=tk.X, expand=True)
+        worker_status_var = tk.StringVar()
+        worker_status_var.set("Journeyman")
+        worker_status_dropdown = tk.OptionMenu(worker_status_frame, worker_status_var, "Journeyman", "Contractor")
+        worker_status_dropdown.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.worker_status_var.set(prefill_data.get("worker_status", "Journeyman"))
+            worker_status_var.set(prefill_data.get("worker_status", "Journeyman"))
 
         # NJ / NY Certified
         njny_frame = ttk.Frame(main_frame)
         njny_frame.pack(fill=tk.X, pady=5)
         tk.Label(njny_frame, text="NJ / NY Certified:").pack(side=tk.LEFT)
-        self.nj_ny_certified_var = tk.StringVar()
-        self.nj_ny_certified_var.set("NJ")
-        self.nj_ny_certified_dropdown = tk.OptionMenu(njny_frame, self.nj_ny_certified_var, "NJ", "NY", "Both")
-        self.nj_ny_certified_dropdown.pack(fill=tk.X, expand=True)
+        nj_ny_certified_var = tk.StringVar()
+        nj_ny_certified_var.set("NJ")
+        nj_ny_certified_dropdown = tk.OptionMenu(njny_frame, nj_ny_certified_var, "NJ", "NY", "Both")
+        nj_ny_certified_dropdown.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.nj_ny_certified_var.set(prefill_data.get("nj_ny_certified", "NJ"))
+            nj_ny_certified_var.set(prefill_data.get("nj_ny_certified", "NJ"))
 
-        # Current Status Onsite/Sick/Vaca
+        # Current Status Onsite/Sick/Vacation
         current_status_frame = ttk.Frame(main_frame)
         current_status_frame.pack(fill=tk.X, pady=5)
         tk.Label(current_status_frame, text="Current Status:").pack(side=tk.LEFT)
-        self.current_status_var = tk.StringVar()
-        self.current_status_var.set("On-site")
-        self.current_status_dropdown = tk.OptionMenu(current_status_frame, self.current_status_var, "On-site",
-                                                    "Sick", "Vacation")
-        self.current_status_dropdown.pack(fill=tk.X, expand=True)
+        current_status_var = tk.StringVar()
+        current_status_var.set("On-site")
+        current_status_dropdown = tk.OptionMenu(current_status_frame, current_status_var, "On-site", "Sick", "Vacation")
+        current_status_dropdown.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.current_status_var.set(prefill_data.get("current_status", "On-Site"))
-
+            current_status_var.set(prefill_data.get("current_status", "On-site"))
 
         # Phone Number
         phone_frame = ttk.Frame(main_frame)
         phone_frame.pack(fill=tk.X, pady=5)
         tk.Label(phone_frame, text="Phone Number:").pack(side=tk.LEFT)
-        self.phone_entry = tk.Entry(phone_frame)
-        self.phone_entry.pack(fill=tk.X, expand=True)
+        phone_entry = tk.Entry(phone_frame)
+        phone_entry.pack(fill=tk.X, expand=True)
         if prefill_data:
-            self.phone_entry.insert(0, prefill_data.get("phone", ""))
+            phone_entry.insert(0, prefill_data.get("phone", ""))
 
         # Buttons
         button_frame = ttk.Frame(main_frame)
         button_frame.pack(fill=tk.X, pady=10)
         if prefill_data:
             ttk.Button(button_frame, text="Save",
-                       command=lambda: self.save_edited_employee(prefill_data["index"])).pack(side=tk.LEFT, padx=5)
+                       command=lambda: self.save_edited_employee(
+                           prefill_data["index"],
+                           name_entry.get(),
+                           role_var.get(),
+                           skills_var.get(),
+                           phone_entry.get(),
+                           [certifications_listbox.get(i) for i in certifications_listbox.curselection()],
+                           sst_card_var.get(),
+                           worker_status_var.get(),
+                           nj_ny_certified_var.get(),
+                           current_status_var.get(),
+                           electrician_rank_var.get(),
+                           add_employee_popup)).pack(side=tk.LEFT, padx=5)
         else:
-            ttk.Button(button_frame, text="Add", command=self.add_employee_from_dialog).pack(side=tk.LEFT, padx=5)
-        ttk.Button(button_frame, text="Cancel", command=self.add_employee_popup.destroy).pack(side=tk.RIGHT, padx=5)
+            ttk.Button(button_frame, text="Add",
+                       command=lambda: self.add_employee_from_dialog(
+                           name_entry.get(),
+                           role_var.get(),
+                           skills_var.get(),
+                           phone_entry.get(),
+                           [certifications_listbox.get(i) for i in certifications_listbox.curselection()],
+                           sst_card_var.get(),
+                           worker_status_var.get(),
+                           nj_ny_certified_var.get(),
+                           current_status_var.get(),
+                           electrician_rank_var.get(),
+                           add_employee_popup)).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="Cancel", command=add_employee_popup.destroy).pack(side=tk.RIGHT, padx=5)
 
-        self.add_employee_popup.grab_set()
-        self.root.wait_window(self.add_employee_popup)
+        add_employee_popup.grab_set()
+        self.root.wait_window(add_employee_popup)
 
     def validate_entry_length(self, P, limit):
         try:
@@ -919,7 +977,7 @@ class WhiteboardApp:
         except ValueError:
             return False
 
-    def update_skill_dropdown(self, selected_role):
+    def update_skill_dropdown(self, selected_role, skills_var, skills_dropdown):
         skills_by_role = {
             "Electrician": ["Helper", "Junior Mechanic", "Mechanic", "Sub Foreman"],
             "Fire Alarm Electrician": ["Fire Alarm Helper", "Fire Alarm Junior Mechanic", "Fire Alarm Mechanic",
@@ -929,14 +987,14 @@ class WhiteboardApp:
         }
         default_skills = ["Helper", "Junior Mechanic", "Mechanic", "Sub Foreman"]
 
-        menu = self.skills_dropdown["menu"]
+        menu = skills_dropdown["menu"]
         menu.delete(0, "end")
 
         skills = skills_by_role.get(selected_role, default_skills)
         for skill in skills:
-            menu.add_command(label=skill, command=lambda value=skill: self.skills_var.set(value))
+            menu.add_command(label=skill, command=lambda value=skill: skills_var.set(value))
 
-        self.skills_var.set(skills[0] if skills else "")
+        skills_var.set(skills[0] if skills else "")
 
     def format_phone_number(self, event):
         value = self.phone_entry.get()
@@ -952,37 +1010,16 @@ class WhiteboardApp:
         self.phone_entry.delete(0, tk.END)
         self.phone_entry.insert(0, formatted)
 
-    def add_employee_from_dialog(self):
-        name = self.name_entry.get()
-        role = self.role_var.get()
-        skills = self.skills_var.get()
-        phone = self.phone_entry.get()
-        certifications = [self.certifications_listbox.get(i) for i in self.certifications_listbox.curselection()]
-        sst_card = self.sst_card_var.get()
-        nj_ny_certified = self.nj_ny_certified_var.get()
-        worker_status = self.worker_status_var.get()
-        current_status = self.current_status_var.get()
-        electrician_rank = self.electrician_rank_var.get()
-
+    def add_employee_from_dialog(self, name, role, skill, phone, certifications, sst_card, worker_status,
+                                 nj_ny_certified, current_status, electrician_rank, add_employee_popup):
         if name and role:
-            self.add_employee(name=name, role=role, skills=[skills], electrician_rank=electrician_rank,
-                              certifications=certifications,
-                              sst_card=sst_card, worker_status=worker_status, current_status=current_status, nj_ny_certified=nj_ny_certified,
-                              phone=phone)
-        self.add_employee_popup.destroy()
+            self.add_employee(name=name, role=role, skills=[skill], electrician_rank=electrician_rank,
+                              certifications=certifications, sst_card=sst_card, worker_status=worker_status,
+                              current_status=current_status, nj_ny_certified=nj_ny_certified, phone=phone)
+        add_employee_popup.destroy()
 
-    def save_edited_employee(self, index):
-        name = self.name_entry.get()
-        role = self.role_var.get()
-        skill = self.skills_var.get()
-        phone = self.phone_entry.get()
-        certifications = [self.certifications_listbox.get(i) for i in self.certifications_listbox.curselection()]
-        sst_card = self.sst_card_var.get()
-        nj_ny_certified = self.nj_ny_certified_var.get()
-        worker_status = self.worker_status_var.get()
-        current_status = self.current_status_var.get()
-        electrician_rank = self.electrician_rank_var.get()
-
+    def save_edited_employee(self, index, name, role, skill, phone, certifications, sst_card, worker_status,
+                             nj_ny_certified, current_status, electrician_rank, add_employee_popup):
         if name and role:
             box = self.employee_boxes[index]
             box.text = name
@@ -1005,7 +1042,7 @@ class WhiteboardApp:
             self.canvas.itemconfig(box.circle_id, fill=box.color, outline=box.color)
             self.update_unassigned_employees()
             self.save_state()
-        self.add_employee_popup.destroy()
+        add_employee_popup.destroy()
         self.apply_status_colors()
 
     def add_employee(self, name=None, role=None, phone=None, x=None, y=None, job_site=None, box=None, skills=None,

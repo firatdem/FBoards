@@ -1,42 +1,6 @@
 {
     "employees": [
         {
-            "text": "Ralpy Reyes",
-            "role": "Foreman",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "1515 Surf",
-            "box": "Foreman",
-            "x": 87.25,
-            "y": 97.25
-        },
-        {
-            "text": "De Los Santos",
-            "role": "Electrician",
-            "phone": "NaN",
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": "0",
-            "certifications": [],
-            "worker_status": "nan",
-            "current_status": "On-site",
-            "job_site": "81 Arden",
-            "box": "Electrician",
-            "x": 721.75,
-            "y": 135.5
-        },
-        {
             "text": "LRC Construction",
             "role": "GM",
             "phone": NaN,
@@ -51,26 +15,8 @@
             "current_status": "On-site",
             "job_site": "1515 Surf",
             "box": "GM",
-            "x": 87.25,
-            "y": 74.75
-        },
-        {
-            "text": "Juan Mata Torres",
-            "role": "Electrician",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "1515 Surf",
-            "box": "Electrician",
-            "x": 87.25,
-            "y": 135.5
+            "x": 87.22749999999999,
+            "y": 74.5025
         },
         {
             "text": "Tony Moreno",
@@ -85,10 +31,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 144.5
+            "x": 87.22749999999999,
+            "y": 1036.7825000000003
         },
         {
             "text": "Jose Moran Santos",
@@ -103,10 +49,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "104-19 Roosevelt",
+            "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 933.25,
-            "y": 439.25
+            "x": 296.6125,
+            "y": 134.645
         },
         {
             "text": "Luis Perlata",
@@ -121,10 +67,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 153.5
+            "x": 87.22749999999999,
+            "y": 1045.6925000000003
         },
         {
             "text": "Frank Suarez",
@@ -139,10 +85,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "Wonder Food",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 1356.25,
-            "y": 135.5
+            "x": 87.22749999999999,
+            "y": 1054.6025000000002
         },
         {
             "text": "Ruben Iena-Polo",
@@ -157,10 +103,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 162.5
+            "x": 87.22749999999999,
+            "y": 1063.5125000000003
         },
         {
             "text": "Andres Chaves",
@@ -175,10 +121,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 171.5
+            "x": 87.22749999999999,
+            "y": 1072.4225000000004
         },
         {
             "text": "Del Rosario Rodrigo",
@@ -193,10 +139,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 180.5
+            "x": 87.22749999999999,
+            "y": 1081.3325000000002
         },
         {
             "text": "Gabriel Figuareo",
@@ -211,10 +157,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 144.5
+            "x": 87.22749999999999,
+            "y": 1090.2425000000003
         },
         {
             "text": "Frank Machuca",
@@ -229,10 +175,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 189.5
+            "x": 87.22749999999999,
+            "y": 1099.1525000000004
         },
         {
             "text": "Jose Soto",
@@ -247,10 +193,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 198.5
+            "x": 87.22749999999999,
+            "y": 1108.0625000000002
         },
         {
             "text": "Montag Hicham",
@@ -267,8 +213,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Foreman",
-            "x": 298.75,
-            "y": 97.25
+            "x": 296.6125,
+            "y": 96.7775
         },
         {
             "text": "Nelso Auconcula",
@@ -283,10 +229,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "737 4th Ave",
+            "job_site": "Wonder Food - Staten",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 135.5
+            "x": 715.3825,
+            "y": 736.07
         },
         {
             "text": "Christopher Soneho",
@@ -303,8 +249,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 144.5
+            "x": 296.6125,
+            "y": 143.555
         },
         {
             "text": "Guillermo Rivas",
@@ -321,8 +267,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 153.5
+            "x": 296.6125,
+            "y": 152.465
         },
         {
             "text": "Jorge Machasilla",
@@ -339,8 +285,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 162.5
+            "x": 296.6125,
+            "y": 161.375
         },
         {
             "text": "Roy Ball",
@@ -357,8 +303,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 171.5
+            "x": 296.6125,
+            "y": 170.28500000000003
         },
         {
             "text": "Carlos Mejia",
@@ -375,8 +321,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 180.5
+            "x": 296.6125,
+            "y": 179.19500000000002
         },
         {
             "text": "Maximo Gutierrez",
@@ -393,8 +339,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 189.5
+            "x": 296.6125,
+            "y": 188.10500000000002
         },
         {
             "text": "Juan From Vega",
@@ -411,8 +357,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 198.5
+            "x": 296.6125,
+            "y": 197.01500000000001
         },
         {
             "text": "Jennifer Rodriguez",
@@ -429,8 +375,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 207.5
+            "x": 296.6125,
+            "y": 205.925
         },
         {
             "text": "Kleber Alp",
@@ -445,10 +391,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "737 4th Ave",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 216.5
+            "x": 87.22749999999999,
+            "y": 1116.9725000000003
         },
         {
             "text": "Firtroy Meneish",
@@ -465,8 +411,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 225.5
+            "x": 296.6125,
+            "y": 214.83500000000004
         },
         {
             "text": "Sadat Munkaila",
@@ -483,8 +429,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 234.5
+            "x": 296.6125,
+            "y": 223.745
         },
         {
             "text": "Diego Mendez",
@@ -501,26 +447,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 243.5
-        },
-        {
-            "text": "Francisco Espinosa",
-            "role": "PM",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "23-30 Borden",
-            "box": "PM",
-            "x": 510.25,
-            "y": 52.25
+            "x": 296.6125,
+            "y": 232.65500000000003
         },
         {
             "text": "Vaughn Martin",
@@ -535,10 +463,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "23-30 Borden",
+            "job_site": "Unassigned",
             "box": "Foreman",
-            "x": 510.25,
-            "y": 97.25
+            "x": 87.22749999999999,
+            "y": 998.9150000000002
         },
         {
             "text": "David Turner",
@@ -553,10 +481,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "23-30 Borden",
+            "job_site": "737 4th Ave",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 135.5
+            "x": 296.6125,
+            "y": 241.56500000000003
         },
         {
             "text": "Levvar Sebastian",
@@ -573,8 +501,8 @@
             "current_status": "On-site",
             "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 743.0
+            "x": 87.22749999999999,
+            "y": 1125.8825000000002
         },
         {
             "text": "Alvaro Rodriguez",
@@ -591,8 +519,8 @@
             "current_status": "On-site",
             "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 752.0
+            "x": 87.22749999999999,
+            "y": 1134.7925000000002
         },
         {
             "text": "Aqim Hasanaj",
@@ -607,10 +535,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "23-30 Borden",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 144.5
+            "x": 87.22749999999999,
+            "y": 1143.7025000000003
         },
         {
             "text": "Daneil Brito",
@@ -625,10 +553,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "1515 Surf",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 207.5
+            "x": 87.22749999999999,
+            "y": 1152.6125000000002
         },
         {
             "text": "Jose Molina",
@@ -643,10 +571,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "35 Bay",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 153.5
+            "x": 296.6125,
+            "y": 435.3575
         },
         {
             "text": "Eastman Cooke",
@@ -663,8 +591,8 @@
             "current_status": "On-site",
             "job_site": "81 Arden",
             "box": "GM",
-            "x": 721.75,
-            "y": 74.75
+            "x": 715.3825,
+            "y": 74.5025
         },
         {
             "text": "Fred Williams",
@@ -679,10 +607,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "38 Jackson",
+            "job_site": "23-30 Borden",
             "box": "PM",
-            "x": 1144.75,
-            "y": 52.25
+            "x": 505.99750000000006,
+            "y": 52.2275
         },
         {
             "text": "GWG",
@@ -699,8 +627,8 @@
             "current_status": "On-site",
             "job_site": "Candlewood Suites",
             "box": "GM",
-            "x": 933.25,
-            "y": 74.75
+            "x": 924.7675,
+            "y": 74.5025
         },
         {
             "text": "Paul Rodriguez",
@@ -717,8 +645,8 @@
             "current_status": "On-site",
             "job_site": "Candlewood Suites",
             "box": "Electrician",
-            "x": 933.25,
-            "y": 135.5
+            "x": 924.7675,
+            "y": 134.645
         },
         {
             "text": "Felix Vicente",
@@ -735,8 +663,8 @@
             "current_status": "On-site",
             "job_site": "Candlewood Suites",
             "box": "Electrician",
-            "x": 933.25,
-            "y": 144.5
+            "x": 924.7675,
+            "y": 143.555
         },
         {
             "text": "Adam Kimmell",
@@ -753,8 +681,8 @@
             "current_status": "On-site",
             "job_site": "Candlewood Suites",
             "box": "Foreman",
-            "x": 933.25,
-            "y": 97.25
+            "x": 924.7675,
+            "y": 96.7775
         },
         {
             "text": "Wilmer Santos",
@@ -771,8 +699,8 @@
             "current_status": "On-site",
             "job_site": "Candlewood Suites",
             "box": "Electrician",
-            "x": 933.25,
-            "y": 153.5
+            "x": 924.7675,
+            "y": 152.465
         },
         {
             "text": "Garret Creclechy",
@@ -789,8 +717,8 @@
             "current_status": "On-site",
             "job_site": "Candlewood Suites",
             "box": "Electrician",
-            "x": 933.25,
-            "y": 162.5
+            "x": 924.7675,
+            "y": 161.375
         },
         {
             "text": "Molfetta Group",
@@ -807,8 +735,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "GM",
-            "x": 1144.75,
-            "y": 74.75
+            "x": 1134.1525000000001,
+            "y": 74.5025
         },
         {
             "text": "Juan Rodriguez",
@@ -825,8 +753,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 135.5
+            "x": 1134.1525000000001,
+            "y": 134.645
         },
         {
             "text": "William Rodriguez",
@@ -841,10 +769,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "38 Jackson",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 144.5
+            "x": 87.22749999999999,
+            "y": 1161.5225000000003
         },
         {
             "text": "Rogerio Roberto",
@@ -859,10 +787,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "38 Jackson",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 153.5
+            "x": 87.22749999999999,
+            "y": 1170.4325000000003
         },
         {
             "text": "Spartec Crew",
@@ -879,8 +807,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 162.5
+            "x": 1134.1525000000001,
+            "y": 143.555
         },
         {
             "text": "Eti - Spartec Foreman",
@@ -897,8 +825,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 171.5
+            "x": 1134.1525000000001,
+            "y": 152.465
         },
         {
             "text": "Fredy Suin",
@@ -915,8 +843,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 180.5
+            "x": 1134.1525000000001,
+            "y": 161.375
         },
         {
             "text": "Edwin Geovanny",
@@ -933,8 +861,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 189.5
+            "x": 1134.1525000000001,
+            "y": 170.28500000000003
         },
         {
             "text": "Yuri Noa",
@@ -951,8 +879,8 @@
             "current_status": "On-site",
             "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 761.0
+            "x": 87.22749999999999,
+            "y": 1179.3425000000002
         },
         {
             "text": "Dwayne Ivery",
@@ -969,8 +897,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 198.5
+            "x": 1134.1525000000001,
+            "y": 179.19500000000002
         },
         {
             "text": "Danniel Heneriquis",
@@ -987,8 +915,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 207.5
+            "x": 1134.1525000000001,
+            "y": 188.10500000000002
         },
         {
             "text": "Ruben Mercedes",
@@ -1005,8 +933,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 216.5
+            "x": 1134.1525000000001,
+            "y": 197.01500000000001
         },
         {
             "text": "Arebelo Marlon",
@@ -1015,16 +943,16 @@
             "skills": [
                 "Helper"
             ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
+            "sst_card": "Yes",
+            "nj_ny_certified": "NY",
             "electrician_rank": 0,
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "38 Jackson",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 225.5
+            "x": 87.22749999999999,
+            "y": 1188.2525000000003
         },
         {
             "text": "Hector De la Rosa",
@@ -1039,10 +967,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "38 Jackson",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 234.5
+            "x": 87.22749999999999,
+            "y": 1197.1625000000004
         },
         {
             "text": "Emeraldo Deselhi",
@@ -1059,26 +987,26 @@
             "current_status": "On-site",
             "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 770.0
+            "x": 87.22749999999999,
+            "y": 1206.0725000000002
         },
         {
-            "text": "Wonder Food GC",
+            "text": "Eastman Cooke",
             "role": "GM",
-            "phone": NaN,
+            "phone": "NaN",
             "skills": [
                 "Helper"
             ],
             "sst_card": "No",
             "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
+            "electrician_rank": "0",
             "certifications": [],
-            "worker_status": NaN,
+            "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "Wonder Food",
+            "job_site": "Wonder Food - Jackson",
             "box": "GM",
-            "x": 1356.25,
-            "y": 74.75
+            "x": 1343.5375000000001,
+            "y": 74.5025
         },
         {
             "text": "James Bradley",
@@ -1093,64 +1021,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "Wonder Food",
+            "job_site": "Wonder Food - Jackson",
             "box": "Foreman",
-            "x": 1356.25,
-            "y": 97.25
-        },
-        {
-            "text": "Francisco Espinosa",
-            "role": "PM",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "1100 Randolph",
-            "box": "PM",
-            "x": 1567.75,
-            "y": 52.25
-        },
-        {
-            "text": "March Construction",
-            "role": "GM",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "1100 Randolph",
-            "box": "GM",
-            "x": 1567.75,
-            "y": 74.75
-        },
-        {
-            "text": "Signed EOR",
-            "role": "Electrician",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "1100 Randolph",
-            "box": "Electrician",
-            "x": 1567.75,
-            "y": 135.5
+            "x": 1343.5375000000001,
+            "y": 96.7775
         },
         {
             "text": "March Construction",
@@ -1167,8 +1041,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "GM",
-            "x": 87.25,
-            "y": 378.5
+            "x": 1552.9225000000001,
+            "y": 74.5025
         },
         {
             "text": "Isaac Rosario",
@@ -1185,8 +1059,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Foreman",
-            "x": 87.25,
-            "y": 401.0
+            "x": 1552.9225000000001,
+            "y": 96.7775
         },
         {
             "text": "Elvin Frias",
@@ -1201,10 +1075,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "104 Bruckner EV",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 162.5
+            "x": 1343.5375000000001,
+            "y": 736.07
         },
         {
             "text": "Robert Santos",
@@ -1219,10 +1093,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "Court House Square",
+            "job_site": "38th W EV Charger",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 439.25
+            "x": 924.7675,
+            "y": 736.07
         },
         {
             "text": "Johnny Sanchez",
@@ -1239,8 +1113,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 448.25
+            "x": 1552.9225000000001,
+            "y": 134.645
         },
         {
             "text": "Denison Rodriguez",
@@ -1257,8 +1131,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 457.25
+            "x": 1552.9225000000001,
+            "y": 143.555
         },
         {
             "text": "Juan Metz",
@@ -1273,10 +1147,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "104 Bruckner EV",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 171.5
+            "x": 1343.5375000000001,
+            "y": 744.98
         },
         {
             "text": "Rovinson Zapata",
@@ -1291,10 +1165,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "Court House Square",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 466.25
+            "x": 87.22749999999999,
+            "y": 1214.9825000000003
         },
         {
             "text": "David Torres",
@@ -1309,10 +1183,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "Brick Church - Build. A",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 180.5
+            "x": 505.99750000000006,
+            "y": 736.07
         },
         {
             "text": "John Mayi",
@@ -1327,10 +1201,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 189.5
+            "x": 1552.9225000000001,
+            "y": 152.465
         },
         {
             "text": "Joel Mayi",
@@ -1345,10 +1219,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 198.5
+            "x": 1552.9225000000001,
+            "y": 161.375
         },
         {
             "text": "Carlos Rigneer",
@@ -1365,8 +1239,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 475.25
+            "x": 1552.9225000000001,
+            "y": 170.28500000000003
         },
         {
             "text": "Junior Rojas",
@@ -1383,8 +1257,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 484.25
+            "x": 1552.9225000000001,
+            "y": 179.19500000000002
         },
         {
             "text": "Stephanie R",
@@ -1401,8 +1275,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 493.25
+            "x": 1552.9225000000001,
+            "y": 188.10500000000002
         },
         {
             "text": "Lenny Taveras",
@@ -1417,10 +1291,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "Brick Church - Build. A",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 207.5
+            "x": 505.99750000000006,
+            "y": 744.98
         },
         {
             "text": "Roman Alvarado",
@@ -1437,8 +1311,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 502.25
+            "x": 1552.9225000000001,
+            "y": 197.01500000000001
         },
         {
             "text": "Favian Vera",
@@ -1455,8 +1329,8 @@
             "current_status": "On-site",
             "job_site": "Court House Square",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 511.25
+            "x": 1552.9225000000001,
+            "y": 205.925
         },
         {
             "text": "Robin Leon",
@@ -1471,10 +1345,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "Court House Square",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 87.25,
-            "y": 520.25
+            "x": 87.22749999999999,
+            "y": 1223.8925000000004
         },
         {
             "text": "Eric Ortiz",
@@ -1491,8 +1365,8 @@
             "current_status": "On-site",
             "job_site": "55 Hudson Yards",
             "box": "PM",
-            "x": 298.75,
-            "y": 356.0
+            "x": 87.22749999999999,
+            "y": 352.94000000000005
         },
         {
             "text": "Hudson Yards GM",
@@ -1509,8 +1383,8 @@
             "current_status": "On-site",
             "job_site": "55 Hudson Yards",
             "box": "GM",
-            "x": 298.75,
-            "y": 378.5
+            "x": 87.22749999999999,
+            "y": 375.21500000000003
         },
         {
             "text": "Tim P",
@@ -1527,8 +1401,8 @@
             "current_status": "On-site",
             "job_site": "35 Bay",
             "box": "PM",
-            "x": 510.25,
-            "y": 356.0
+            "x": 296.6125,
+            "y": 352.94000000000005
         },
         {
             "text": "March Construction",
@@ -1545,8 +1419,8 @@
             "current_status": "On-site",
             "job_site": "35 Bay",
             "box": "GM",
-            "x": 510.25,
-            "y": 378.5
+            "x": 296.6125,
+            "y": 375.21500000000003
         },
         {
             "text": "Danny Jankie",
@@ -1563,8 +1437,8 @@
             "current_status": "On-site",
             "job_site": "35 Bay",
             "box": "Foreman",
-            "x": 510.25,
-            "y": 401.0
+            "x": 296.6125,
+            "y": 397.49000000000007
         },
         {
             "text": "Santos Gutierrez",
@@ -1581,8 +1455,8 @@
             "current_status": "On-site",
             "job_site": "35 Bay",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 439.25
+            "x": 296.6125,
+            "y": 444.26750000000004
         },
         {
             "text": "Refugi Evmena",
@@ -1597,10 +1471,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "35 Bay",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 448.25
+            "x": 87.22749999999999,
+            "y": 1232.8025000000002
         },
         {
             "text": "Van Goncalves",
@@ -1617,8 +1491,8 @@
             "current_status": "On-site",
             "job_site": "35 Bay",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 457.25
+            "x": 296.6125,
+            "y": 453.1775
         },
         {
             "text": "Juan Toroshina",
@@ -1633,10 +1507,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "35 Bay",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 466.25
+            "x": 87.22749999999999,
+            "y": 1241.7125000000003
         },
         {
             "text": "Mikey B",
@@ -1653,8 +1527,8 @@
             "current_status": "On-site",
             "job_site": "400 Central Park W",
             "box": "PM",
-            "x": 721.75,
-            "y": 356.0
+            "x": 505.99750000000006,
+            "y": 352.94000000000005
         },
         {
             "text": "DVM",
@@ -1671,8 +1545,8 @@
             "current_status": "On-site",
             "job_site": "400 Central Park W",
             "box": "GM",
-            "x": 721.75,
-            "y": 378.5
+            "x": 505.99750000000006,
+            "y": 375.21500000000003
         },
         {
             "text": "Carlos Torres",
@@ -1687,10 +1561,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "104-19 Roosevelt",
-            "box": "Electrician",
-            "x": 933.25,
-            "y": 448.25
+            "job_site": "400 Central Park W",
+            "box": "Foreman",
+            "x": 505.99750000000006,
+            "y": 397.49000000000007
         },
         {
             "text": "Eric Ortiz",
@@ -1707,8 +1581,8 @@
             "current_status": "On-site",
             "job_site": "104-19 Roosevelt",
             "box": "PM",
-            "x": 933.25,
-            "y": 356.0
+            "x": 715.3825,
+            "y": 352.94000000000005
         },
         {
             "text": "KBE NYC",
@@ -1725,8 +1599,8 @@
             "current_status": "On-site",
             "job_site": "104-19 Roosevelt",
             "box": "GM",
-            "x": 933.25,
-            "y": 378.5
+            "x": 715.3825,
+            "y": 375.21500000000003
         },
         {
             "text": "Eric Ortiz",
@@ -1743,8 +1617,8 @@
             "current_status": "On-site",
             "job_site": "Admirals Cove",
             "box": "PM",
-            "x": 1144.75,
-            "y": 356.0
+            "x": 924.7675,
+            "y": 352.94000000000005
         },
         {
             "text": "Ginsberg Development",
@@ -1761,8 +1635,8 @@
             "current_status": "On-site",
             "job_site": "Admirals Cove",
             "box": "GM",
-            "x": 1144.75,
-            "y": 378.5
+            "x": 924.7675,
+            "y": 375.21500000000003
         },
         {
             "text": "Eric Ortiz",
@@ -1779,8 +1653,8 @@
             "current_status": "On-site",
             "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 779.0
+            "x": 87.22749999999999,
+            "y": 1250.6225000000004
         },
         {
             "text": "Need 2 Men",
@@ -1795,10 +1669,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "Admirals Cove",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 1144.75,
-            "y": 439.25
+            "x": 87.22749999999999,
+            "y": 1259.5325000000003
         },
         {
             "text": "Bob Lozzi",
@@ -1813,10 +1687,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "Wonder Food",
+            "job_site": "Wonder Food - Jackson",
             "box": "PM",
-            "x": 1356.25,
-            "y": 52.25
+            "x": 1343.5375000000001,
+            "y": 52.2275
         },
         {
             "text": "Volvo GC",
@@ -1833,8 +1707,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "GM",
-            "x": 1356.25,
-            "y": 378.5
+            "x": 1134.1525000000001,
+            "y": 375.21500000000003
         },
         {
             "text": "Hugo Gutierrez",
@@ -1851,8 +1725,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "Foreman",
-            "x": 1356.25,
-            "y": 401.0
+            "x": 1134.1525000000001,
+            "y": 397.49000000000007
         },
         {
             "text": "Jhonye Quisae",
@@ -1869,8 +1743,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "Electrician",
-            "x": 1356.25,
-            "y": 439.25
+            "x": 1134.1525000000001,
+            "y": 435.3575
         },
         {
             "text": "Arley Duave",
@@ -1885,10 +1759,10 @@
             "certifications": [],
             "worker_status": "nan",
             "current_status": "On-site",
-            "job_site": "1 Volvo Dr",
+            "job_site": "Wonder Food - Staten",
             "box": "Electrician",
-            "x": 1356.25,
-            "y": 448.25
+            "x": 715.3825,
+            "y": 744.98
         },
         {
             "text": "Ludin Poriz",
@@ -1905,8 +1779,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "Electrician",
-            "x": 1356.25,
-            "y": 457.25
+            "x": 1134.1525000000001,
+            "y": 444.26750000000004
         },
         {
             "text": "Bob Lozzi",
@@ -1923,8 +1797,8 @@
             "current_status": "On-site",
             "job_site": "Vito Mazza",
             "box": "PM",
-            "x": 1567.75,
-            "y": 356.0
+            "x": 1343.5375000000001,
+            "y": 352.94000000000005
         },
         {
             "text": "Vito GC",
@@ -1941,8 +1815,8 @@
             "current_status": "On-site",
             "job_site": "Vito Mazza",
             "box": "GM",
-            "x": 1567.75,
-            "y": 378.5
+            "x": 1343.5375000000001,
+            "y": 375.21500000000003
         },
         {
             "text": "Sharaz Ahktar",
@@ -1957,10 +1831,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "Vito Mazza",
+            "job_site": "Wonder Food - Staten",
             "box": "Electrician",
-            "x": 1567.75,
-            "y": 439.25
+            "x": 715.3825,
+            "y": 753.8900000000001
         },
         {
             "text": "Bob Lozzi",
@@ -1977,8 +1851,8 @@
             "current_status": "On-site",
             "job_site": "Brick Church Garage",
             "box": "PM",
-            "x": 87.25,
-            "y": 659.75
+            "x": 1552.9225000000001,
+            "y": 352.94000000000005
         },
         {
             "text": "Brick GC",
@@ -1995,80 +1869,8 @@
             "current_status": "On-site",
             "job_site": "Brick Church Garage",
             "box": "GM",
-            "x": 87.25,
-            "y": 682.25
-        },
-        {
-            "text": "Brick Foreman",
-            "role": "Foreman",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "Brick Church Garage",
-            "box": "Foreman",
-            "x": 87.25,
-            "y": 704.75
-        },
-        {
-            "text": "Card Access",
-            "role": "Electrician",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "Brick Church Garage",
-            "box": "Electrician",
-            "x": 87.25,
-            "y": 743.0
-        },
-        {
-            "text": "Security",
-            "role": "Electrician",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "Brick Church Garage",
-            "box": "Electrician",
-            "x": 87.25,
-            "y": 752.0
-        },
-        {
-            "text": "Francisco Espinosa",
-            "role": "PM",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "Bas Columbia",
-            "box": "PM",
-            "x": 298.75,
-            "y": 659.75
+            "x": 1552.9225000000001,
+            "y": 375.21500000000003
         },
         {
             "text": "Bas GC",
@@ -2085,8 +1887,8 @@
             "current_status": "On-site",
             "job_site": "Bas Columbia",
             "box": "GM",
-            "x": 298.75,
-            "y": 682.25
+            "x": 87.22749999999999,
+            "y": 675.9275000000001
         },
         {
             "text": "Bas Foreman",
@@ -2103,8 +1905,8 @@
             "current_status": "On-site",
             "job_site": "Bas Columbia",
             "box": "Foreman",
-            "x": 298.75,
-            "y": 704.75
+            "x": 87.22749999999999,
+            "y": 698.2025000000001
         },
         {
             "text": "Yundi Li",
@@ -2119,10 +1921,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "Bas Columbia",
+            "job_site": "Wonder Food - Jackson",
             "box": "Electrician",
-            "x": 298.75,
-            "y": 743.0
+            "x": 1343.5375000000001,
+            "y": 134.645
         },
         {
             "text": "Spring GC",
@@ -2139,8 +1941,8 @@
             "current_status": "On-site",
             "job_site": "Spring St",
             "box": "GM",
-            "x": 510.25,
-            "y": 682.25
+            "x": 296.6125,
+            "y": 675.9275000000001
         },
         {
             "text": "Collin Phillips",
@@ -2155,10 +1957,10 @@
             "certifications": [],
             "worker_status": NaN,
             "current_status": "On-site",
-            "job_site": "Spring St",
-            "box": "Foreman",
-            "x": 510.25,
-            "y": 704.75
+            "job_site": "23-30 Borden",
+            "box": "Electrician",
+            "x": 505.99750000000006,
+            "y": 134.645
         },
         {
             "text": "CMA",
@@ -2175,26 +1977,8 @@
             "current_status": "On-site",
             "job_site": "737 4th Ave",
             "box": "GM",
-            "x": 298.75,
-            "y": 74.75
-        },
-        {
-            "text": "Francisco Espinosa",
-            "role": "PM",
-            "phone": "",
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "Both",
-            "electrician_rank": "0",
-            "certifications": [],
-            "worker_status": "Journeyman",
-            "current_status": "On-site",
-            "job_site": "81 Arden",
-            "box": "PM",
-            "x": 721.75,
-            "y": 52.25
+            "x": 296.6125,
+            "y": 74.5025
         },
         {
             "text": "Jairo Rodriguez",
@@ -2209,46 +1993,10 @@
             "certifications": [],
             "worker_status": "Journeyman",
             "current_status": "On-site",
-            "job_site": "81 Arden",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 721.75,
-            "y": 216.5
-        },
-        {
-            "text": "Rundell Ramsey",
-            "role": "Fire Alarm Electrician",
-            "phone": "",
-            "skills": [
-                "Fire Alarm Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": "0",
-            "certifications": [],
-            "worker_status": "Journeyman",
-            "current_status": "On-site",
-            "job_site": "38 Jackson",
-            "box": "Electrician",
-            "x": 1144.75,
-            "y": 243.5
-        },
-        {
-            "text": "Frank Sanders",
-            "role": "PM",
-            "phone": "",
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": "0",
-            "certifications": [],
-            "worker_status": "Journeyman",
-            "current_status": "On-site",
-            "job_site": "Court House Square",
-            "box": "PM",
-            "x": 87.25,
-            "y": 356.0
+            "x": 87.22749999999999,
+            "y": 1268.4425000000003
         },
         {
             "text": "Daniel Brito",
@@ -2263,10 +2011,10 @@
             "certifications": [],
             "worker_status": "Journeyman",
             "current_status": "On-site",
-            "job_site": "Spring St",
+            "job_site": "Unassigned",
             "box": "Electrician",
-            "x": 510.25,
-            "y": 743.0
+            "x": 87.22749999999999,
+            "y": 1277.3525000000002
         },
         {
             "text": "Ugo Desantis",
@@ -2283,8 +2031,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "Electrician",
-            "x": 1356.25,
-            "y": 466.25
+            "x": 1134.1525000000001,
+            "y": 453.1775
         },
         {
             "text": "Kit Barganto",
@@ -2301,8 +2049,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "Electrician",
-            "x": 1356.25,
-            "y": 475.25
+            "x": 1134.1525000000001,
+            "y": 462.08750000000003
         },
         {
             "text": "March Construction",
@@ -2319,8 +2067,8 @@
             "current_status": "On-site",
             "job_site": "23-30 Borden",
             "box": "GM",
-            "x": 510.25,
-            "y": 74.75
+            "x": 505.99750000000006,
+            "y": 74.5025
         },
         {
             "text": "Danny Jankie",
@@ -2337,26 +2085,8 @@
             "current_status": "On-site",
             "job_site": "38 Jackson",
             "box": "Foreman",
-            "x": 1144.75,
-            "y": 97.25
-        },
-        {
-            "text": "Fred Williams",
-            "role": "PM",
-            "phone": NaN,
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "NJ",
-            "electrician_rank": 0,
-            "certifications": [],
-            "worker_status": NaN,
-            "current_status": "On-site",
-            "job_site": "Candlewood Suites",
-            "box": "PM",
-            "x": 933.25,
-            "y": 52.25
+            "x": 1134.1525000000001,
+            "y": 96.7775
         },
         {
             "text": "Bob Lozzi",
@@ -2373,44 +2103,8 @@
             "current_status": "On-site",
             "job_site": "1 Volvo Dr",
             "box": "PM",
-            "x": 1356.25,
-            "y": 356.0
-        },
-        {
-            "text": "Gene Koltunov",
-            "role": "PM",
-            "phone": "",
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "Both",
-            "electrician_rank": "0",
-            "certifications": [],
-            "worker_status": "Journeyman",
-            "current_status": "On-site",
-            "job_site": "737 4th Ave",
-            "box": "PM",
-            "x": 298.75,
-            "y": 52.25
-        },
-        {
-            "text": "Gene Koltunov",
-            "role": "PM",
-            "phone": "",
-            "skills": [
-                "Helper"
-            ],
-            "sst_card": "No",
-            "nj_ny_certified": "Both",
-            "electrician_rank": "0",
-            "certifications": [],
-            "worker_status": "Journeyman",
-            "current_status": "On-site",
-            "job_site": "1515 Surf",
-            "box": "PM",
-            "x": 87.25,
-            "y": 52.25
+            "x": 1134.1525000000001,
+            "y": 352.94000000000005
         },
         {
             "text": "Eric Ortiz",
@@ -2427,8 +2121,458 @@
             "current_status": "On-site",
             "job_site": "Spring St",
             "box": "PM",
-            "x": 510.25,
-            "y": 659.75
+            "x": 296.6125,
+            "y": 653.6525
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "PM",
+            "x": 1134.1525000000001,
+            "y": 52.2275
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "PM",
+            "x": 924.7675,
+            "y": 52.2275
+        },
+        {
+            "text": "Frank Sanders",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "PM",
+            "x": 1552.9225000000001,
+            "y": 52.2275
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Bas Columbia",
+            "box": "PM",
+            "x": 87.22749999999999,
+            "y": 653.6525
+        },
+        {
+            "text": "Frank Sanders",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Brick Church - Build. A",
+            "box": "PM",
+            "x": 505.99750000000006,
+            "y": 653.6525
+        },
+        {
+            "text": "Jamel Rahman",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Sub Foreman"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 296.6125,
+            "y": 250.47500000000002
+        },
+        {
+            "text": "Adam Drissi",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 296.6125,
+            "y": 259.38500000000005
+        },
+        {
+            "text": "Daniel De Los Santos",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1134.1525000000001,
+            "y": 205.925
+        },
+        {
+            "text": "Bob Lozzi",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Staten",
+            "box": "PM",
+            "x": 715.3825,
+            "y": 653.6525
+        },
+        {
+            "text": "Adam Prosper",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Staten",
+            "box": "Electrician",
+            "x": 715.3825,
+            "y": 762.8000000000001
+        },
+        {
+            "text": "Michael Burbano",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Brick Church Garage",
+            "box": "Electrician",
+            "x": 1552.9225000000001,
+            "y": 435.3575
+        },
+        {
+            "text": "Carlos Torres",
+            "role": "Foreman",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Brick Church Garage",
+            "box": "Foreman",
+            "x": 1552.9225000000001,
+            "y": 397.49000000000007
+        },
+        {
+            "text": "Vinny P",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "38th W EV Charger",
+            "box": "PM",
+            "x": 924.7675,
+            "y": 653.6525
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "PM",
+            "x": 1134.1525000000001,
+            "y": 653.6525
+        },
+        {
+            "text": "Kevin Zylich",
+            "role": "Foreman",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Foreman",
+            "x": 1134.1525000000001,
+            "y": 698.2025000000001
+        },
+        {
+            "text": "Nicholas Barnes",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 87.22749999999999,
+            "y": 1286.2625000000003
+        },
+        {
+            "text": "Jordan Cameron",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 87.22749999999999,
+            "y": 1295.1725000000004
+        },
+        {
+            "text": "Brandon Cornwell",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Electrician",
+            "x": 1134.1525000000001,
+            "y": 736.07
+        },
+        {
+            "text": "Nicholas Selemme",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 1552.9225000000001,
+            "y": 214.83500000000004
+        },
+        {
+            "text": "Dwight Aimable",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 1552.9225000000001,
+            "y": 223.745
+        },
+        {
+            "text": "Need 1 man",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "81 Arden",
+            "box": "Electrician",
+            "x": 715.3825,
+            "y": 134.645
+        },
+        {
+            "text": "Need 2 Men",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "Vacation",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1134.1525000000001,
+            "y": 214.83500000000004
+        },
+        {
+            "text": "William Butler",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Electrician",
+            "x": 1134.1525000000001,
+            "y": 744.98
+        },
+        {
+            "text": "Schedule Work 11/22",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Cooley LLP",
+            "box": "Electrician",
+            "x": 1552.9225000000001,
+            "y": 736.07
+        },
+        {
+            "text": "Mikey B",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "104 Bruckner EV",
+            "box": "PM",
+            "x": 1343.5375000000001,
+            "y": 653.6525
         }
     ],
     "job_sites": [
@@ -2437,43 +2581,33 @@
             "x": 50.0,
             "y": 50.0,
             "status": {
-                "PM": true,
+                "PM": false,
                 "GM": true,
-                "Foreman": true,
-                "Electrician": [
-                    2056,
-                    2058,
-                    2062,
-                    2066,
-                    2068,
-                    2070,
-                    2074,
-                    2076,
-                    2118
-                ],
+                "Foreman": false,
+                "Electrician": [],
                 "ElectricianBoxCoords": [
-                    52.25,
-                    135.5,
-                    250.25,
-                    295.25
+                    52.2275,
+                    134.645,
+                    248.24750000000003,
+                    292.7975
                 ],
                 "PMCoords": [
-                    52.25,
-                    52.25,
-                    250.25,
-                    72.5
+                    52.2275,
+                    52.2275,
+                    248.24750000000003,
+                    72.275
                 ],
                 "GMCoords": [
-                    52.25,
-                    74.75,
-                    250.25,
-                    95.0
+                    52.2275,
+                    74.5025,
+                    248.24750000000003,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    52.25,
-                    97.25,
-                    250.25,
-                    117.5
+                    52.2275,
+                    96.7775,
+                    248.24750000000003,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
@@ -2481,50 +2615,52 @@
         },
         {
             "name": "737 4th Ave",
-            "x": 261.5,
+            "x": 259.385,
             "y": 50.0,
             "status": {
-                "PM": true,
+                "PM": false,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2080,
-                    2082,
-                    2084,
-                    2086,
-                    2088,
-                    2090,
-                    2092,
-                    2094,
-                    2096,
-                    2098,
-                    2100,
-                    2102,
-                    2104
+                    206,
+                    228,
+                    230,
+                    232,
+                    234,
+                    236,
+                    238,
+                    240,
+                    242,
+                    246,
+                    248,
+                    250,
+                    254,
+                    448,
+                    450
                 ],
                 "ElectricianBoxCoords": [
-                    263.75,
-                    135.5,
-                    461.75,
-                    295.25
+                    261.6125,
+                    134.645,
+                    457.6325,
+                    292.7975
                 ],
                 "PMCoords": [
-                    263.75,
-                    52.25,
-                    461.75,
-                    72.5
+                    261.6125,
+                    52.2275,
+                    457.6325,
+                    72.275
                 ],
                 "GMCoords": [
-                    263.75,
-                    74.75,
-                    461.75,
-                    95.0
+                    261.6125,
+                    74.5025,
+                    457.6325,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    263.75,
-                    97.25,
-                    461.75,
-                    117.5
+                    261.6125,
+                    96.7775,
+                    457.6325,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
@@ -2532,39 +2668,38 @@
         },
         {
             "name": "23-30 Borden",
-            "x": 473.0,
+            "x": 468.77000000000004,
             "y": 50.0,
             "status": {
                 "PM": true,
                 "GM": true,
-                "Foreman": true,
+                "Foreman": false,
                 "Electrician": [
-                    2110,
-                    2116
+                    418
                 ],
                 "ElectricianBoxCoords": [
-                    475.25,
-                    135.5,
-                    673.25,
-                    295.25
+                    470.99750000000006,
+                    134.645,
+                    667.0175000000002,
+                    292.7975
                 ],
                 "PMCoords": [
-                    475.25,
-                    52.25,
-                    673.25,
-                    72.5
+                    470.99750000000006,
+                    52.2275,
+                    667.0175000000002,
+                    72.275
                 ],
                 "GMCoords": [
-                    475.25,
-                    74.75,
-                    673.25,
-                    95.0
+                    470.99750000000006,
+                    74.5025,
+                    667.0175000000002,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    475.25,
-                    97.25,
-                    673.25,
-                    117.5
+                    470.99750000000006,
+                    96.7775,
+                    667.0175000000002,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
@@ -2572,89 +2707,80 @@
         },
         {
             "name": "81 Arden",
-            "x": 684.5,
+            "x": 678.1550000000001,
             "y": 50.0,
             "status": {
-                "PM": true,
+                "PM": false,
                 "GM": true,
                 "Foreman": false,
                 "Electrician": [
-                    2052,
-                    2072,
-                    2120,
-                    2182,
-                    2190,
-                    2194,
-                    2196,
-                    2198,
-                    2206,
-                    2294
+                    478
                 ],
                 "ElectricianBoxCoords": [
-                    686.75,
-                    135.5,
-                    884.75,
-                    295.25
+                    680.3825,
+                    134.645,
+                    876.4025000000001,
+                    292.7975
                 ],
                 "PMCoords": [
-                    686.75,
-                    52.25,
-                    884.75,
-                    72.5
+                    680.3825,
+                    52.2275,
+                    876.4025000000001,
+                    72.275
                 ],
                 "GMCoords": [
-                    686.75,
-                    74.75,
-                    884.75,
-                    95.0
+                    680.3825,
+                    74.5025,
+                    876.4025000000001,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    686.75,
-                    97.25,
-                    884.75,
-                    117.5
+                    680.3825,
+                    96.7775,
+                    876.4025000000001,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
-            "note": ""
+            "note": "Need (1) tech with Frank"
         },
         {
             "name": "Candlewood Suites",
-            "x": 896.0,
+            "x": 887.5400000000001,
             "y": 50.0,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2128,
-                    2130,
-                    2134,
-                    2136
+                    272,
+                    274,
+                    278,
+                    280
                 ],
                 "ElectricianBoxCoords": [
-                    898.25,
-                    135.5,
-                    1096.25,
-                    295.25
+                    889.7675,
+                    134.645,
+                    1085.7875000000001,
+                    292.7975
                 ],
                 "PMCoords": [
-                    898.25,
-                    52.25,
-                    1096.25,
-                    72.5
+                    889.7675,
+                    52.2275,
+                    1085.7875000000001,
+                    72.275
                 ],
                 "GMCoords": [
-                    898.25,
-                    74.75,
-                    1096.25,
-                    95.0
+                    889.7675,
+                    74.5025,
+                    1085.7875000000001,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    898.25,
-                    97.25,
-                    1096.25,
-                    117.5
+                    889.7675,
+                    96.7775,
+                    1085.7875000000001,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
@@ -2662,176 +2788,135 @@
         },
         {
             "name": "38 Jackson",
-            "x": 1107.5,
+            "x": 1096.9250000000002,
             "y": 50.0,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2140,
-                    2142,
-                    2144,
-                    2146,
-                    2148,
-                    2150,
-                    2152,
-                    2156,
-                    2158,
-                    2160,
-                    2162,
-                    2164,
-                    2296
+                    284,
+                    290,
+                    292,
+                    294,
+                    296,
+                    300,
+                    302,
+                    304,
+                    452,
+                    480
                 ],
                 "ElectricianBoxCoords": [
-                    1109.75,
-                    135.5,
-                    1307.75,
-                    295.25
+                    1099.1525000000001,
+                    134.645,
+                    1295.1725000000001,
+                    292.7975
                 ],
                 "PMCoords": [
-                    1109.75,
-                    52.25,
-                    1307.75,
-                    72.5
+                    1099.1525000000001,
+                    52.2275,
+                    1295.1725000000001,
+                    72.275
                 ],
                 "GMCoords": [
-                    1109.75,
-                    74.75,
-                    1307.75,
-                    95.0
+                    1099.1525000000001,
+                    74.5025,
+                    1295.1725000000001,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    1109.75,
-                    97.25,
-                    1307.75,
-                    117.5
+                    1099.1525000000001,
+                    96.7775,
+                    1295.1725000000001,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
-            "note": ""
+            "note": "Need (2) men"
         },
         {
-            "name": "Wonder Food",
-            "x": 1319.0,
+            "name": "Wonder Food - Jackson",
+            "x": 1306.3100000000002,
             "y": 50.0,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2064
+                    414
                 ],
                 "ElectricianBoxCoords": [
-                    1321.25,
-                    135.5,
-                    1519.25,
-                    295.25
+                    1308.5375000000001,
+                    134.645,
+                    1504.5575000000003,
+                    292.7975
                 ],
                 "PMCoords": [
-                    1321.25,
-                    52.25,
-                    1519.25,
-                    72.5
+                    1308.5375000000001,
+                    52.2275,
+                    1504.5575000000003,
+                    72.275
                 ],
                 "GMCoords": [
-                    1321.25,
-                    74.75,
-                    1519.25,
-                    95.0
+                    1308.5375000000001,
+                    74.5025,
+                    1504.5575000000003,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    1321.25,
-                    97.25,
-                    1519.25,
-                    117.5
+                    1308.5375000000001,
+                    96.7775,
+                    1504.5575000000003,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
-            "note": ""
-        },
-        {
-            "name": "1100 Randolph",
-            "x": 1530.5,
-            "y": 50.0,
-            "status": {
-                "PM": true,
-                "GM": true,
-                "Foreman": false,
-                "Electrician": [
-                    2176
-                ],
-                "ElectricianBoxCoords": [
-                    1532.75,
-                    135.5,
-                    1730.75,
-                    295.25
-                ],
-                "PMCoords": [
-                    1532.75,
-                    52.25,
-                    1730.75,
-                    72.5
-                ],
-                "GMCoords": [
-                    1532.75,
-                    74.75,
-                    1730.75,
-                    95.0
-                ],
-                "ForemanCoords": [
-                    1532.75,
-                    97.25,
-                    1730.75,
-                    117.5
-                ],
-                "Collapsed": false
-            },
-            "note": ""
+            "note": "Need to move Yundi Li\nMove James Bradley to Volvo 11/7?\nNeed to be completed EOD 11/6"
         },
         {
             "name": "Court House Square",
-            "x": 50.0,
-            "y": 353.75,
+            "x": 1515.6950000000002,
+            "y": 50.0,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2184,
-                    2186,
-                    2188,
-                    2192,
-                    2200,
-                    2202,
-                    2204,
-                    2208,
-                    2210,
-                    2212
+                    324,
+                    326,
+                    334,
+                    336,
+                    338,
+                    340,
+                    342,
+                    346,
+                    348,
+                    474,
+                    476
                 ],
                 "ElectricianBoxCoords": [
-                    52.25,
-                    439.25,
-                    250.25,
-                    599.0
+                    1517.9225000000001,
+                    134.645,
+                    1713.9425,
+                    292.7975
                 ],
                 "PMCoords": [
-                    52.25,
-                    356.0,
-                    250.25,
-                    376.25
+                    1517.9225000000001,
+                    52.2275,
+                    1713.9425,
+                    72.275
                 ],
                 "GMCoords": [
-                    52.25,
-                    378.5,
-                    250.25,
-                    398.75
+                    1517.9225000000001,
+                    74.5025,
+                    1713.9425,
+                    94.55000000000001
                 ],
                 "ForemanCoords": [
-                    52.25,
-                    401.0,
-                    250.25,
-                    421.25
+                    1517.9225000000001,
+                    96.7775,
+                    1713.9425,
+                    116.82500000000002
                 ],
                 "Collapsed": false
             },
@@ -2839,36 +2924,36 @@
         },
         {
             "name": "55 Hudson Yards",
-            "x": 261.5,
-            "y": 353.75,
+            "x": 50.0,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": false,
                 "Electrician": [],
                 "ElectricianBoxCoords": [
-                    263.75,
-                    439.25,
-                    461.75,
-                    599.0
+                    52.2275,
+                    435.3575,
+                    248.24750000000003,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    263.75,
-                    356.0,
-                    461.75,
-                    376.25
+                    52.2275,
+                    352.94000000000005,
+                    248.24750000000003,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    263.75,
-                    378.5,
-                    461.75,
-                    398.75
+                    52.2275,
+                    375.21500000000003,
+                    248.24750000000003,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    263.75,
-                    401.0,
-                    461.75,
-                    421.25
+                    52.2275,
+                    397.49000000000007,
+                    248.24750000000003,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -2876,41 +2961,40 @@
         },
         {
             "name": "35 Bay",
-            "x": 473.0,
-            "y": 353.75,
+            "x": 259.385,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2224,
-                    2226,
-                    2228,
-                    2230
+                    264,
+                    362,
+                    366
                 ],
                 "ElectricianBoxCoords": [
-                    475.25,
-                    439.25,
-                    673.25,
-                    599.0
+                    261.6125,
+                    435.3575,
+                    457.6325,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    475.25,
-                    356.0,
-                    673.25,
-                    376.25
+                    261.6125,
+                    352.94000000000005,
+                    457.6325,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    475.25,
-                    378.5,
-                    673.25,
-                    398.75
+                    261.6125,
+                    375.21500000000003,
+                    457.6325,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    475.25,
-                    401.0,
-                    673.25,
-                    421.25
+                    261.6125,
+                    397.49000000000007,
+                    457.6325,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -2918,36 +3002,36 @@
         },
         {
             "name": "400 Central Park W",
-            "x": 684.5,
-            "y": 353.75,
+            "x": 468.77000000000004,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
-                "Foreman": false,
+                "Foreman": true,
                 "Electrician": [],
                 "ElectricianBoxCoords": [
-                    686.75,
-                    439.25,
-                    884.75,
-                    599.0
+                    470.99750000000006,
+                    435.3575,
+                    667.0175000000002,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    686.75,
-                    356.0,
-                    884.75,
-                    376.25
+                    470.99750000000006,
+                    352.94000000000005,
+                    667.0175000000002,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    686.75,
-                    378.5,
-                    884.75,
-                    398.75
+                    470.99750000000006,
+                    375.21500000000003,
+                    667.0175000000002,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    686.75,
-                    401.0,
-                    884.75,
-                    421.25
+                    470.99750000000006,
+                    397.49000000000007,
+                    667.0175000000002,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -2955,39 +3039,36 @@
         },
         {
             "name": "104-19 Roosevelt",
-            "x": 896.0,
-            "y": 353.75,
+            "x": 678.1550000000001,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": false,
-                "Electrician": [
-                    2060,
-                    2236
-                ],
+                "Electrician": [],
                 "ElectricianBoxCoords": [
-                    898.25,
-                    439.25,
-                    1096.25,
-                    599.0
+                    680.3825,
+                    435.3575,
+                    876.4025000000001,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    898.25,
-                    356.0,
-                    1096.25,
-                    376.25
+                    680.3825,
+                    352.94000000000005,
+                    876.4025000000001,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    898.25,
-                    378.5,
-                    1096.25,
-                    398.75
+                    680.3825,
+                    375.21500000000003,
+                    876.4025000000001,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    898.25,
-                    401.0,
-                    1096.25,
-                    421.25
+                    680.3825,
+                    397.49000000000007,
+                    876.4025000000001,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -2995,38 +3076,36 @@
         },
         {
             "name": "Admirals Cove",
-            "x": 1107.5,
-            "y": 353.75,
+            "x": 887.5400000000001,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": false,
-                "Electrician": [
-                    2248
-                ],
+                "Electrician": [],
                 "ElectricianBoxCoords": [
-                    1109.75,
-                    439.25,
-                    1307.75,
-                    599.0
+                    889.7675,
+                    435.3575,
+                    1085.7875000000001,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    1109.75,
-                    356.0,
-                    1307.75,
-                    376.25
+                    889.7675,
+                    352.94000000000005,
+                    1085.7875000000001,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    1109.75,
-                    378.5,
-                    1307.75,
-                    398.75
+                    889.7675,
+                    375.21500000000003,
+                    1085.7875000000001,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    1109.75,
-                    401.0,
-                    1307.75,
-                    421.25
+                    889.7675,
+                    397.49000000000007,
+                    1085.7875000000001,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -3034,42 +3113,41 @@
         },
         {
             "name": "1 Volvo Dr",
-            "x": 1319.0,
-            "y": 353.75,
+            "x": 1096.9250000000002,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2256,
-                    2258,
-                    2260,
-                    2302,
-                    2304
+                    394,
+                    398,
+                    426,
+                    428
                 ],
                 "ElectricianBoxCoords": [
-                    1321.25,
-                    439.25,
-                    1519.25,
-                    599.0
+                    1099.1525000000001,
+                    435.3575,
+                    1295.1725000000001,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    1321.25,
-                    356.0,
-                    1519.25,
-                    376.25
+                    1099.1525000000001,
+                    352.94000000000005,
+                    1295.1725000000001,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    1321.25,
-                    378.5,
-                    1519.25,
-                    398.75
+                    1099.1525000000001,
+                    375.21500000000003,
+                    1295.1725000000001,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    1321.25,
-                    401.0,
-                    1519.25,
-                    421.25
+                    1099.1525000000001,
+                    397.49000000000007,
+                    1295.1725000000001,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -3077,38 +3155,36 @@
         },
         {
             "name": "Vito Mazza",
-            "x": 1530.5,
-            "y": 353.75,
+            "x": 1306.3100000000002,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": false,
-                "Electrician": [
-                    2266
-                ],
+                "Electrician": [],
                 "ElectricianBoxCoords": [
-                    1532.75,
-                    439.25,
-                    1730.75,
-                    599.0
+                    1308.5375000000001,
+                    435.3575,
+                    1504.5575000000003,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    1532.75,
-                    356.0,
-                    1730.75,
-                    376.25
+                    1308.5375000000001,
+                    352.94000000000005,
+                    1504.5575000000003,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    1532.75,
-                    378.5,
-                    1730.75,
-                    398.75
+                    1308.5375000000001,
+                    375.21500000000003,
+                    1504.5575000000003,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    1532.75,
-                    401.0,
-                    1730.75,
-                    421.25
+                    1308.5375000000001,
+                    397.49000000000007,
+                    1504.5575000000003,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -3116,39 +3192,38 @@
         },
         {
             "name": "Brick Church Garage",
-            "x": 50.0,
-            "y": 657.5,
+            "x": 1515.6950000000002,
+            "y": 350.71250000000003,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
                 "Electrician": [
-                    2274,
-                    2276
+                    458
                 ],
                 "ElectricianBoxCoords": [
-                    52.25,
-                    743.0,
-                    250.25,
-                    902.75
+                    1517.9225000000001,
+                    435.3575,
+                    1713.9425,
+                    593.5100000000001
                 ],
                 "PMCoords": [
-                    52.25,
-                    659.75,
-                    250.25,
-                    680.0
+                    1517.9225000000001,
+                    352.94000000000005,
+                    1713.9425,
+                    372.98750000000007
                 ],
                 "GMCoords": [
-                    52.25,
-                    682.25,
-                    250.25,
-                    702.5
+                    1517.9225000000001,
+                    375.21500000000003,
+                    1713.9425,
+                    395.26250000000005
                 ],
                 "ForemanCoords": [
-                    52.25,
-                    704.75,
-                    250.25,
-                    725.0
+                    1517.9225000000001,
+                    397.49000000000007,
+                    1713.9425,
+                    417.5375
                 ],
                 "Collapsed": false
             },
@@ -3156,204 +3231,391 @@
         },
         {
             "name": "Bas Columbia",
-            "x": 261.5,
-            "y": 657.5,
+            "x": 50.0,
+            "y": 651.4250000000001,
             "status": {
                 "PM": true,
                 "GM": true,
                 "Foreman": true,
-                "Electrician": [
-                    2284
-                ],
+                "Electrician": [],
                 "ElectricianBoxCoords": [
-                    263.75,
-                    743.0,
-                    461.75,
-                    902.75
+                    52.2275,
+                    736.07,
+                    248.24750000000003,
+                    894.2225000000001
                 ],
                 "PMCoords": [
-                    263.75,
-                    659.75,
-                    461.75,
-                    680.0
+                    52.2275,
+                    653.6525,
+                    248.24750000000003,
+                    673.7
                 ],
                 "GMCoords": [
-                    263.75,
-                    682.25,
-                    461.75,
-                    702.5
+                    52.2275,
+                    675.9275000000001,
+                    248.24750000000003,
+                    695.9750000000001
                 ],
                 "ForemanCoords": [
-                    263.75,
-                    704.75,
-                    461.75,
-                    725.0
+                    52.2275,
+                    698.2025000000001,
+                    248.24750000000003,
+                    718.2500000000001
                 ],
                 "Collapsed": false
             },
-            "note": ""
+            "note": "Finished?"
         },
         {
             "name": "Spring St",
-            "x": 473.0,
-            "y": 657.5,
+            "x": 259.385,
+            "y": 651.4250000000001,
             "status": {
                 "PM": true,
                 "GM": true,
-                "Foreman": true,
-                "Electrician": [
-                    2300
-                ],
+                "Foreman": false,
+                "Electrician": [],
                 "ElectricianBoxCoords": [
-                    475.25,
-                    743.0,
-                    673.25,
-                    902.75
+                    261.6125,
+                    736.07,
+                    457.6325,
+                    894.2225000000001
                 ],
                 "PMCoords": [
-                    475.25,
-                    659.75,
-                    673.25,
-                    680.0
+                    261.6125,
+                    653.6525,
+                    457.6325,
+                    673.7
                 ],
                 "GMCoords": [
-                    475.25,
-                    682.25,
-                    673.25,
-                    702.5
+                    261.6125,
+                    675.9275000000001,
+                    457.6325,
+                    695.9750000000001
                 ],
                 "ForemanCoords": [
-                    475.25,
-                    704.75,
-                    673.25,
-                    725.0
+                    261.6125,
+                    698.2025000000001,
+                    457.6325,
+                    718.2500000000001
                 ],
                 "Collapsed": false
             },
             "note": ""
+        },
+        {
+            "name": "Brick Church - Build. A",
+            "x": 468.77000000000004,
+            "y": 651.4250000000001,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    332,
+                    344
+                ],
+                "ElectricianBoxCoords": [
+                    470.99750000000006,
+                    736.07,
+                    667.0175000000002,
+                    894.2225000000001
+                ],
+                "PMCoords": [
+                    470.99750000000006,
+                    653.6525,
+                    667.0175000000002,
+                    673.7
+                ],
+                "GMCoords": [
+                    470.99750000000006,
+                    675.9275000000001,
+                    667.0175000000002,
+                    695.9750000000001
+                ],
+                "ForemanCoords": [
+                    470.99750000000006,
+                    698.2025000000001,
+                    667.0175000000002,
+                    718.2500000000001
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Wonder Food - Staten",
+            "x": 678.1550000000001,
+            "y": 651.4250000000001,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    226,
+                    396,
+                    404,
+                    456
+                ],
+                "ElectricianBoxCoords": [
+                    680.3825,
+                    736.07,
+                    876.4025000000001,
+                    894.2225000000001
+                ],
+                "PMCoords": [
+                    680.3825,
+                    653.6525,
+                    876.4025000000001,
+                    673.7
+                ],
+                "GMCoords": [
+                    680.3825,
+                    675.9275000000001,
+                    876.4025000000001,
+                    695.9750000000001
+                ],
+                "ForemanCoords": [
+                    680.3825,
+                    698.2025000000001,
+                    876.4025000000001,
+                    718.2500000000001
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "38th W EV Charger",
+            "x": 887.5400000000001,
+            "y": 651.4250000000001,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    322
+                ],
+                "ElectricianBoxCoords": [
+                    889.7675,
+                    736.07,
+                    1085.7875000000001,
+                    894.2225000000001
+                ],
+                "PMCoords": [
+                    889.7675,
+                    653.6525,
+                    1085.7875000000001,
+                    673.7
+                ],
+                "GMCoords": [
+                    889.7675,
+                    675.9275000000001,
+                    1085.7875000000001,
+                    695.9750000000001
+                ],
+                "ForemanCoords": [
+                    889.7675,
+                    698.2025000000001,
+                    1085.7875000000001,
+                    718.2500000000001
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Avid Hotel MD",
+            "x": 1096.9250000000002,
+            "y": 651.4250000000001,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": true,
+                "Electrician": [
+                    472,
+                    482
+                ],
+                "ElectricianBoxCoords": [
+                    1099.1525000000001,
+                    736.07,
+                    1295.1725000000001,
+                    894.2225000000001
+                ],
+                "PMCoords": [
+                    1099.1525000000001,
+                    653.6525,
+                    1295.1725000000001,
+                    673.7
+                ],
+                "GMCoords": [
+                    1099.1525000000001,
+                    675.9275000000001,
+                    1295.1725000000001,
+                    695.9750000000001
+                ],
+                "ForemanCoords": [
+                    1099.1525000000001,
+                    698.2025000000001,
+                    1295.1725000000001,
+                    718.2500000000001
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "104 Bruckner EV",
+            "x": 1306.3100000000002,
+            "y": 651.4250000000001,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    320,
+                    328
+                ],
+                "ElectricianBoxCoords": [
+                    1308.5375000000001,
+                    736.07,
+                    1504.5575000000003,
+                    894.2225000000001
+                ],
+                "PMCoords": [
+                    1308.5375000000001,
+                    653.6525,
+                    1504.5575000000003,
+                    673.7
+                ],
+                "GMCoords": [
+                    1308.5375000000001,
+                    675.9275000000001,
+                    1504.5575000000003,
+                    695.9750000000001
+                ],
+                "ForemanCoords": [
+                    1308.5375000000001,
+                    698.2025000000001,
+                    1504.5575000000003,
+                    718.2500000000001
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Cooley LLP",
+            "x": 1515.6950000000002,
+            "y": 651.4250000000001,
+            "status": {
+                "PM": false,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    484
+                ],
+                "ElectricianBoxCoords": [
+                    1517.9225000000001,
+                    736.07,
+                    1713.9425,
+                    894.2225000000001
+                ],
+                "PMCoords": [
+                    1517.9225000000001,
+                    653.6525,
+                    1713.9425,
+                    673.7
+                ],
+                "GMCoords": [
+                    1517.9225000000001,
+                    675.9275000000001,
+                    1713.9425,
+                    695.9750000000001
+                ],
+                "ForemanCoords": [
+                    1517.9225000000001,
+                    698.2025000000001,
+                    1713.9425,
+                    718.2500000000001
+                ],
+                "Collapsed": false
+            },
+            "note": "Need to schedule work for 11/22"
         },
         {
             "name": "Unassigned",
-            "x": 684.5,
-            "y": 657.5,
+            "x": 50.0,
+            "y": 952.1375000000002,
             "status": {
                 "PM": false,
                 "GM": false,
-                "Foreman": false,
+                "Foreman": true,
                 "Electrician": [
-                    2112,
-                    2114,
-                    2154,
-                    2166,
-                    2246
+                    204,
+                    208,
+                    210,
+                    212,
+                    214,
+                    216,
+                    218,
+                    220,
+                    222,
+                    244,
+                    256,
+                    258,
+                    260,
+                    262,
+                    286,
+                    288,
+                    298,
+                    306,
+                    308,
+                    310,
+                    330,
+                    350,
+                    364,
+                    368,
+                    384,
+                    386,
+                    422,
+                    424,
+                    468,
+                    470
                 ],
                 "ElectricianBoxCoords": [
-                    686.75,
-                    743.0,
-                    884.75,
-                    902.75
+                    52.2275,
+                    1036.7825000000003,
+                    248.24750000000003,
+                    1194.9350000000002
                 ],
                 "PMCoords": [
-                    686.75,
-                    659.75,
-                    884.75,
-                    680.0
+                    52.2275,
+                    954.3650000000001,
+                    248.24750000000003,
+                    974.4125000000001
                 ],
                 "GMCoords": [
-                    686.75,
-                    682.25,
-                    884.75,
-                    702.5
+                    52.2275,
+                    976.6400000000002,
+                    248.24750000000003,
+                    996.6875000000002
                 ],
                 "ForemanCoords": [
-                    686.75,
-                    704.75,
-                    884.75,
-                    725.0
-                ],
-                "Collapsed": false
-            },
-            "note": ""
-        },
-        {
-            "name": "Vacation",
-            "x": 896.0,
-            "y": 657.5,
-            "status": {
-                "PM": false,
-                "GM": false,
-                "Foreman": false,
-                "Electrician": [],
-                "ElectricianBoxCoords": [
-                    898.25,
-                    743.0,
-                    1096.25,
-                    902.75
-                ],
-                "PMCoords": [
-                    898.25,
-                    659.75,
-                    1096.25,
-                    680.0
-                ],
-                "GMCoords": [
-                    898.25,
-                    682.25,
-                    1096.25,
-                    702.5
-                ],
-                "ForemanCoords": [
-                    898.25,
-                    704.75,
-                    1096.25,
-                    725.0
-                ],
-                "Collapsed": false
-            },
-            "note": ""
-        },
-        {
-            "name": "Sick",
-            "x": 1107.5,
-            "y": 657.5,
-            "status": {
-                "PM": false,
-                "GM": false,
-                "Foreman": false,
-                "Electrician": [],
-                "ElectricianBoxCoords": [
-                    1109.75,
-                    743.0,
-                    1307.75,
-                    902.75
-                ],
-                "PMCoords": [
-                    1109.75,
-                    659.75,
-                    1307.75,
-                    680.0
-                ],
-                "GMCoords": [
-                    1109.75,
-                    682.25,
-                    1307.75,
-                    702.5
-                ],
-                "ForemanCoords": [
-                    1109.75,
-                    704.75,
-                    1307.75,
-                    725.0
+                    52.2275,
+                    998.9150000000002,
+                    248.24750000000003,
+                    1018.9625000000002
                 ],
                 "Collapsed": false
             },
             "note": ""
         }
     ],
-    "scale": 0.225,
+    "scale": 0.22275000000000003,
     "canvas_transform": [
-        780.0,
-        470.0
+        152.0,
+        62.0
     ],
     "scroll_x": 0.0,
     "scroll_y": 0.0

@@ -54,9 +54,10 @@ class JobSiteHub:
         self.canvas.tag_unbind(self.erase_button_id, "<ButtonPress-1>")
         self.canvas.tag_unbind(self.collapse_button_id, "<ButtonPress-1>")
 
-
     def get_display_text(self):
-        return f"{self.text}{self.address}" #Address will probably be removed, leave as is for now
+        # Return the text truncated to 20 characters with "..." if it's too long
+        truncated_text = (self.text[:15] + '...') if len(self.text) > 17 else self.text
+        return f"{truncated_text}{self.address}"
 
     def create_snap_box(self):
         return self.canvas.create_rectangle(0, 0, 1, 1, fill="white", outline="black", tags="snap_box")

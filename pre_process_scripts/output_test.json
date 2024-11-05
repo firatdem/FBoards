@@ -1,0 +1,3544 @@
+{
+    "employees": [
+        {
+            "text": "De Los Santos",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 743.0
+        },
+        {
+            "text": "LRC Construction",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1515 Surf",
+            "box": "GM",
+            "x": 87.25,
+            "y": 74.75
+        },
+        {
+            "text": "Juan Mata Torres",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 752.0
+        },
+        {
+            "text": "Tony Moreno",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 761.0
+        },
+        {
+            "text": "Jose Moran Santos",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "23-30 Borden",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 135.5
+        },
+        {
+            "text": "Luis Perlata",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 770.0
+        },
+        {
+            "text": "Frank Suarez",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 779.0
+        },
+        {
+            "text": "Ruben Iena-Polo",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 788.0
+        },
+        {
+            "text": "Andres Chaves",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 797.0
+        },
+        {
+            "text": "Del Rosario Rodrigo",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 806.0
+        },
+        {
+            "text": "Gabriel Figuareo",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 815.0
+        },
+        {
+            "text": "Frank Machuca",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 824.0
+        },
+        {
+            "text": "Jose Soto",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 833.0
+        },
+        {
+            "text": "Montag Hicham",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Foreman",
+            "x": 298.75,
+            "y": 97.25
+        },
+        {
+            "text": "Nelso Auconcula",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Staten",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 743.0
+        },
+        {
+            "text": "Christopher Soneho",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 135.5
+        },
+        {
+            "text": "Guillermo Rivas",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 144.5
+        },
+        {
+            "text": "Jorge Machasilla",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 153.5
+        },
+        {
+            "text": "Roy Ball",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 162.5
+        },
+        {
+            "text": "Carlos Mejia",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 171.5
+        },
+        {
+            "text": "Maximo Gutierrez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 180.5
+        },
+        {
+            "text": "Juan From Vega",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 189.5
+        },
+        {
+            "text": "Jennifer Rodriguez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 198.5
+        },
+        {
+            "text": "Kleber Alp",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 842.0
+        },
+        {
+            "text": "Firtroy Meneish",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 207.5
+        },
+        {
+            "text": "Sadat Munkaila",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 216.5
+        },
+        {
+            "text": "Diego Mendez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 225.5
+        },
+        {
+            "text": "Vaughn Martin",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Foreman",
+            "x": 1356.25,
+            "y": 704.75
+        },
+        {
+            "text": "David Turner",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "23-30 Borden",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 144.5
+        },
+        {
+            "text": "Levvar Sebastian",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "1",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 851.0
+        },
+        {
+            "text": "Alvaro Rodriguez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 860.0
+        },
+        {
+            "text": "Aqim Hasanaj",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 869.0
+        },
+        {
+            "text": "Daneil Brito",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 878.0
+        },
+        {
+            "text": "Jose Molina",
+            "role": "Fire Alarm Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Fire Alarm Sub Foreman"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 439.25
+        },
+        {
+            "text": "Eastman Cooke",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "81 Arden",
+            "box": "GM",
+            "x": 721.75,
+            "y": 74.75
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "23-30 Borden",
+            "box": "PM",
+            "x": 510.25,
+            "y": 52.25
+        },
+        {
+            "text": "GWG",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "GM",
+            "x": 933.25,
+            "y": 74.75
+        },
+        {
+            "text": "Paul Rodriguez",
+            "role": "Roughing Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Roughing Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 135.5
+        },
+        {
+            "text": "Felix Vicente",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 144.5
+        },
+        {
+            "text": "Adam Kimmell",
+            "role": "Foreman",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "Foreman",
+            "x": 933.25,
+            "y": 97.25
+        },
+        {
+            "text": "Wilmer Santos",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 153.5
+        },
+        {
+            "text": "Garret Creclechy",
+            "role": "Fire Alarm Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Fire Alarm Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 162.5
+        },
+        {
+            "text": "Molfetta Group",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "GM",
+            "x": 1144.75,
+            "y": 74.75
+        },
+        {
+            "text": "Juan Rodriguez",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 135.5
+        },
+        {
+            "text": "William Rodriguez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 887.0
+        },
+        {
+            "text": "Rogerio Roberto",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 896.0
+        },
+        {
+            "text": "Spartec Crew",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 144.5
+        },
+        {
+            "text": "Eti - Spartec Foreman",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 153.5
+        },
+        {
+            "text": "Fredy Suin",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 162.5
+        },
+        {
+            "text": "Edwin Geovanny",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 171.5
+        },
+        {
+            "text": "Yuri Noa",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 905.0
+        },
+        {
+            "text": "Dwayne Ivery",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 180.5
+        },
+        {
+            "text": "Danniel Heneriquis",
+            "role": "Fire Alarm Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Fire Alarm Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 448.25
+        },
+        {
+            "text": "Ruben Mercedes",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 189.5
+        },
+        {
+            "text": "Arebelo Marlon",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 914.0
+        },
+        {
+            "text": "Hector De la Rosa",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Sub Foreman"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 923.0
+        },
+        {
+            "text": "Emeraldo Deselhi",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 932.0
+        },
+        {
+            "text": "Eastman Cooke",
+            "role": "GM",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Jackson",
+            "box": "GM",
+            "x": 1356.25,
+            "y": 74.75
+        },
+        {
+            "text": "James Bradley",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Jackson",
+            "box": "Foreman",
+            "x": 1356.25,
+            "y": 97.25
+        },
+        {
+            "text": "March Construction",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1100 Randolph",
+            "box": "GM",
+            "x": 1567.75,
+            "y": 74.75
+        },
+        {
+            "text": "Signed EOR",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1100 Randolph",
+            "box": "Electrician",
+            "x": 1567.75,
+            "y": 135.5
+        },
+        {
+            "text": "March Construction",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "GM",
+            "x": 87.25,
+            "y": 378.5
+        },
+        {
+            "text": "Isaac Rosario",
+            "role": "Foreman",
+            "phone": "2015559999",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Foreman",
+            "x": 87.25,
+            "y": 401.0
+        },
+        {
+            "text": "Elvin Frias",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "2",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 439.25
+        },
+        {
+            "text": "Robert Santos",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "38th W EV Charger",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 743.0
+        },
+        {
+            "text": "Johnny Sanchez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 448.25
+        },
+        {
+            "text": "Denison Rodriguez",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 457.25
+        },
+        {
+            "text": "Juan Metz",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 466.25
+        },
+        {
+            "text": "Rovinson Zapata",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 941.0
+        },
+        {
+            "text": "David Torres",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Brick Church - Build. A",
+            "box": "Electrician",
+            "x": 721.75,
+            "y": 743.0
+        },
+        {
+            "text": "John Mayi",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 475.25
+        },
+        {
+            "text": "Joel Mayi",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 484.25
+        },
+        {
+            "text": "Carlos Rigneer",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Junior Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 493.25
+        },
+        {
+            "text": "Junior Rojas",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 502.25
+        },
+        {
+            "text": "Stephanie R",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 511.25
+        },
+        {
+            "text": "Lenny Taveras",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Brick Church - Build. A",
+            "box": "Electrician",
+            "x": 721.75,
+            "y": 752.0
+        },
+        {
+            "text": "Roman Alvarado",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 520.25
+        },
+        {
+            "text": "Favian Vera",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 529.25
+        },
+        {
+            "text": "Robin Leon",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 950.0
+        },
+        {
+            "text": "Eric Ortiz",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "55 Hudson Yards",
+            "box": "PM",
+            "x": 298.75,
+            "y": 356.0
+        },
+        {
+            "text": "Hudson Yards GM",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "55 Hudson Yards",
+            "box": "GM",
+            "x": 298.75,
+            "y": 378.5
+        },
+        {
+            "text": "Tim P",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "PM",
+            "x": 510.25,
+            "y": 356.0
+        },
+        {
+            "text": "March Construction",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "GM",
+            "x": 510.25,
+            "y": 378.5
+        },
+        {
+            "text": "Danny Jankie",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "Foreman",
+            "x": 510.25,
+            "y": 401.0
+        },
+        {
+            "text": "Santos Gutierrez",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 457.25
+        },
+        {
+            "text": "Refugi Evmena",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 959.0
+        },
+        {
+            "text": "Van Goncalves",
+            "role": "Fire Alarm Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Fire Alarm Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "35 Bay",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 466.25
+        },
+        {
+            "text": "Juan Toroshina",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 968.0
+        },
+        {
+            "text": "Mikey B",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "400 Central Park W",
+            "box": "PM",
+            "x": 721.75,
+            "y": 356.0
+        },
+        {
+            "text": "DVM",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "400 Central Park W",
+            "box": "GM",
+            "x": 721.75,
+            "y": 378.5
+        },
+        {
+            "text": "Carlos Torres",
+            "role": "Foreman",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "400 Central Park W",
+            "box": "Foreman",
+            "x": 721.75,
+            "y": 401.0
+        },
+        {
+            "text": "Eric Ortiz",
+            "role": "PM",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "104-19 Roosevelt",
+            "box": "PM",
+            "x": 933.25,
+            "y": 356.0
+        },
+        {
+            "text": "KBE NYC",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "104-19 Roosevelt",
+            "box": "GM",
+            "x": 933.25,
+            "y": 378.5
+        },
+        {
+            "text": "Eric Ortiz",
+            "role": "PM",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Admirals Cove",
+            "box": "PM",
+            "x": 1144.75,
+            "y": 356.0
+        },
+        {
+            "text": "Ginsberg Development",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Admirals Cove",
+            "box": "GM",
+            "x": 1144.75,
+            "y": 378.5
+        },
+        {
+            "text": "Eric Ortiz",
+            "role": "Foreman",
+            "phone": "NaN",
+            "skills": [
+                "Sub Foreman"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 977.0
+        },
+        {
+            "text": "Need 2 Men",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 986.0
+        },
+        {
+            "text": "Bob Lozzi",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Jackson",
+            "box": "PM",
+            "x": 1356.25,
+            "y": 52.25
+        },
+        {
+            "text": "Volvo GC",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "GM",
+            "x": 1356.25,
+            "y": 378.5
+        },
+        {
+            "text": "Hugo Gutierrez",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "Foreman",
+            "x": 1356.25,
+            "y": 401.0
+        },
+        {
+            "text": "Jhonye Quisae",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 439.25
+        },
+        {
+            "text": "Arley Duave",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 448.25
+        },
+        {
+            "text": "Ludin Poriz",
+            "role": "Electrician",
+            "phone": "NaN",
+            "skills": [
+                "Mechanic"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 457.25
+        },
+        {
+            "text": "Bob Lozzi",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Vito Mazza",
+            "box": "PM",
+            "x": 1567.75,
+            "y": 356.0
+        },
+        {
+            "text": "Vito GC",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Vito Mazza",
+            "box": "GM",
+            "x": 1567.75,
+            "y": 378.5
+        },
+        {
+            "text": "Sharaz Ahktar",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Staten",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 752.0
+        },
+        {
+            "text": "Bob Lozzi",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Brick Church Garage",
+            "box": "PM",
+            "x": 87.25,
+            "y": 659.75
+        },
+        {
+            "text": "Brick GC",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Brick Church Garage",
+            "box": "GM",
+            "x": 87.25,
+            "y": 682.25
+        },
+        {
+            "text": "Bas GC",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Bas Columbia",
+            "box": "GM",
+            "x": 298.75,
+            "y": 682.25
+        },
+        {
+            "text": "Bas Foreman",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Bas Columbia",
+            "box": "Foreman",
+            "x": 298.75,
+            "y": 704.75
+        },
+        {
+            "text": "Yundi Li",
+            "role": "Electrician",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Jackson",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 135.5
+        },
+        {
+            "text": "Spring GC",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Spring St",
+            "box": "GM",
+            "x": 510.25,
+            "y": 682.25
+        },
+        {
+            "text": "Collin Phillips",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "23-30 Borden",
+            "box": "Electrician",
+            "x": 510.25,
+            "y": 153.5
+        },
+        {
+            "text": "CMA",
+            "role": "GM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "GM",
+            "x": 298.75,
+            "y": 74.75
+        },
+        {
+            "text": "Jairo Rodriguez",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 995.0
+        },
+        {
+            "text": "Daniel Brito",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Unassigned",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 1004.0
+        },
+        {
+            "text": "Ugo Desantis",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 466.25
+        },
+        {
+            "text": "Kit Barganto",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "Electrician",
+            "x": 1356.25,
+            "y": 475.25
+        },
+        {
+            "text": "March Construction",
+            "role": "GM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "23-30 Borden",
+            "box": "GM",
+            "x": 510.25,
+            "y": 74.75
+        },
+        {
+            "text": "Danny Jankie",
+            "role": "Foreman",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Foreman",
+            "x": 1144.75,
+            "y": 97.25
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1100 Randolph",
+            "box": "PM",
+            "x": 1567.75,
+            "y": 52.25
+        },
+        {
+            "text": "Bob Lozzi",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "1 Volvo Dr",
+            "box": "PM",
+            "x": 1356.25,
+            "y": 356.0
+        },
+        {
+            "text": "Eric Ortiz",
+            "role": "PM",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Spring St",
+            "box": "PM",
+            "x": 510.25,
+            "y": 659.75
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "PM",
+            "x": 1144.75,
+            "y": 52.25
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Candlewood Suites",
+            "box": "PM",
+            "x": 933.25,
+            "y": 52.25
+        },
+        {
+            "text": "Frank Sanders",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Court House Square",
+            "box": "PM",
+            "x": 87.25,
+            "y": 356.0
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Bas Columbia",
+            "box": "PM",
+            "x": 298.75,
+            "y": 659.75
+        },
+        {
+            "text": "Frank Sanders",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Brick Church - Build. A",
+            "box": "PM",
+            "x": 721.75,
+            "y": 659.75
+        },
+        {
+            "text": "Jamel Rahman",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Sub Foreman"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 234.5
+        },
+        {
+            "text": "Adam Drissi",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "737 4th Ave",
+            "box": "Electrician",
+            "x": 298.75,
+            "y": 243.5
+        },
+        {
+            "text": "Daniel De Los Santos",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "38 Jackson",
+            "box": "Electrician",
+            "x": 1144.75,
+            "y": 198.5
+        },
+        {
+            "text": "Bob Lozzi",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Staten",
+            "box": "PM",
+            "x": 933.25,
+            "y": 659.75
+        },
+        {
+            "text": "Adam Prosper",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Wonder Food - Staten",
+            "box": "Electrician",
+            "x": 933.25,
+            "y": 761.0
+        },
+        {
+            "text": "Michael Burbano",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Brick Church Garage",
+            "box": "Electrician",
+            "x": 87.25,
+            "y": 743.0
+        },
+        {
+            "text": "Carlos Torres",
+            "role": "Foreman",
+            "phone": "NaN",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "nan",
+            "current_status": "On-site",
+            "job_site": "Brick Church Garage",
+            "box": "Foreman",
+            "x": 87.25,
+            "y": 704.75
+        },
+        {
+            "text": "Vinny P",
+            "role": "PM",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "38th W EV Charger",
+            "box": "PM",
+            "x": 1144.75,
+            "y": 659.75
+        },
+        {
+            "text": "Fred Williams",
+            "role": "PM",
+            "phone": NaN,
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": 0,
+            "certifications": [],
+            "worker_status": NaN,
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "PM",
+            "x": 1567.75,
+            "y": 659.75
+        },
+        {
+            "text": "Kevin Zylich",
+            "role": "Foreman",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Foreman",
+            "x": 1567.75,
+            "y": 704.75
+        },
+        {
+            "text": "Nicholas Barnes",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Electrician",
+            "x": 1567.75,
+            "y": 743.0
+        },
+        {
+            "text": "Jordan Cameron",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Electrician",
+            "x": 1567.75,
+            "y": 752.0
+        },
+        {
+            "text": "Brandon Cornwell",
+            "role": "Electrician",
+            "phone": "",
+            "skills": [
+                "Helper"
+            ],
+            "sst_card": "No",
+            "nj_ny_certified": "NJ",
+            "electrician_rank": "0",
+            "certifications": [],
+            "worker_status": "Journeyman",
+            "current_status": "On-site",
+            "job_site": "Avid Hotel MD",
+            "box": "Electrician",
+            "x": 1567.75,
+            "y": 761.0
+        }
+    ],
+    "job_sites": [
+        {
+            "name": "1515 Surf",
+            "x": 50.0,
+            "y": 50.0,
+            "status": {
+                "PM": false,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    52.25,
+                    135.5,
+                    250.25,
+                    295.25
+                ],
+                "PMCoords": [
+                    52.25,
+                    52.25,
+                    250.25,
+                    72.5
+                ],
+                "GMCoords": [
+                    52.25,
+                    74.75,
+                    250.25,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    52.25,
+                    97.25,
+                    250.25,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "737 4th Ave",
+            "x": 261.5,
+            "y": 50.0,
+            "status": {
+                "PM": false,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    713,
+                    715,
+                    717,
+                    719,
+                    721,
+                    723,
+                    725,
+                    727,
+                    731,
+                    733,
+                    735,
+                    939,
+                    941
+                ],
+                "ElectricianBoxCoords": [
+                    263.75,
+                    135.5,
+                    461.75,
+                    295.25
+                ],
+                "PMCoords": [
+                    263.75,
+                    52.25,
+                    461.75,
+                    72.5
+                ],
+                "GMCoords": [
+                    263.75,
+                    74.75,
+                    461.75,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    263.75,
+                    97.25,
+                    461.75,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "23-30 Borden",
+            "x": 473.0,
+            "y": 50.0,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [
+                    691,
+                    739,
+                    907
+                ],
+                "ElectricianBoxCoords": [
+                    475.25,
+                    135.5,
+                    673.25,
+                    295.25
+                ],
+                "PMCoords": [
+                    475.25,
+                    52.25,
+                    673.25,
+                    72.5
+                ],
+                "GMCoords": [
+                    475.25,
+                    74.75,
+                    673.25,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    475.25,
+                    97.25,
+                    673.25,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "81 Arden",
+            "x": 684.5,
+            "y": 50.0,
+            "status": {
+                "PM": false,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    686.75,
+                    135.5,
+                    884.75,
+                    295.25
+                ],
+                "PMCoords": [
+                    686.75,
+                    52.25,
+                    884.75,
+                    72.5
+                ],
+                "GMCoords": [
+                    686.75,
+                    74.75,
+                    884.75,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    686.75,
+                    97.25,
+                    884.75,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Candlewood Suites",
+            "x": 896.0,
+            "y": 50.0,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    757,
+                    759,
+                    763,
+                    765
+                ],
+                "ElectricianBoxCoords": [
+                    898.25,
+                    135.5,
+                    1096.25,
+                    295.25
+                ],
+                "PMCoords": [
+                    898.25,
+                    52.25,
+                    1096.25,
+                    72.5
+                ],
+                "GMCoords": [
+                    898.25,
+                    74.75,
+                    1096.25,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    898.25,
+                    97.25,
+                    1096.25,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "38 Jackson",
+            "x": 1107.5,
+            "y": 50.0,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    769,
+                    775,
+                    777,
+                    779,
+                    781,
+                    785,
+                    789,
+                    943
+                ],
+                "ElectricianBoxCoords": [
+                    1109.75,
+                    135.5,
+                    1307.75,
+                    295.25
+                ],
+                "PMCoords": [
+                    1109.75,
+                    52.25,
+                    1307.75,
+                    72.5
+                ],
+                "GMCoords": [
+                    1109.75,
+                    74.75,
+                    1307.75,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    1109.75,
+                    97.25,
+                    1307.75,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Wonder Food - Jackson",
+            "x": 1319.0,
+            "y": 50.0,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    903
+                ],
+                "ElectricianBoxCoords": [
+                    1321.25,
+                    135.5,
+                    1519.25,
+                    295.25
+                ],
+                "PMCoords": [
+                    1321.25,
+                    52.25,
+                    1519.25,
+                    72.5
+                ],
+                "GMCoords": [
+                    1321.25,
+                    74.75,
+                    1519.25,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    1321.25,
+                    97.25,
+                    1519.25,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "1100 Randolph",
+            "x": 1530.5,
+            "y": 50.0,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [
+                    803
+                ],
+                "ElectricianBoxCoords": [
+                    1532.75,
+                    135.5,
+                    1730.75,
+                    295.25
+                ],
+                "PMCoords": [
+                    1532.75,
+                    52.25,
+                    1730.75,
+                    72.5
+                ],
+                "GMCoords": [
+                    1532.75,
+                    74.75,
+                    1730.75,
+                    95.0
+                ],
+                "ForemanCoords": [
+                    1532.75,
+                    97.25,
+                    1730.75,
+                    117.5
+                ],
+                "Collapsed": false
+            },
+            "note": "Complete?"
+        },
+        {
+            "name": "Court House Square",
+            "x": 50.0,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    809,
+                    813,
+                    815,
+                    817,
+                    823,
+                    825,
+                    827,
+                    829,
+                    831,
+                    835,
+                    837
+                ],
+                "ElectricianBoxCoords": [
+                    52.25,
+                    439.25,
+                    250.25,
+                    599.0
+                ],
+                "PMCoords": [
+                    52.25,
+                    356.0,
+                    250.25,
+                    376.25
+                ],
+                "GMCoords": [
+                    52.25,
+                    378.5,
+                    250.25,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    52.25,
+                    401.0,
+                    250.25,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "55 Hudson Yards",
+            "x": 261.5,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    263.75,
+                    439.25,
+                    461.75,
+                    599.0
+                ],
+                "PMCoords": [
+                    263.75,
+                    356.0,
+                    461.75,
+                    376.25
+                ],
+                "GMCoords": [
+                    263.75,
+                    378.5,
+                    461.75,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    263.75,
+                    401.0,
+                    461.75,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "35 Bay",
+            "x": 473.0,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    749,
+                    787,
+                    851,
+                    855
+                ],
+                "ElectricianBoxCoords": [
+                    475.25,
+                    439.25,
+                    673.25,
+                    599.0
+                ],
+                "PMCoords": [
+                    475.25,
+                    356.0,
+                    673.25,
+                    376.25
+                ],
+                "GMCoords": [
+                    475.25,
+                    378.5,
+                    673.25,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    475.25,
+                    401.0,
+                    673.25,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "400 Central Park W",
+            "x": 684.5,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    686.75,
+                    439.25,
+                    884.75,
+                    599.0
+                ],
+                "PMCoords": [
+                    686.75,
+                    356.0,
+                    884.75,
+                    376.25
+                ],
+                "GMCoords": [
+                    686.75,
+                    378.5,
+                    884.75,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    686.75,
+                    401.0,
+                    884.75,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "104-19 Roosevelt",
+            "x": 896.0,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    898.25,
+                    439.25,
+                    1096.25,
+                    599.0
+                ],
+                "PMCoords": [
+                    898.25,
+                    356.0,
+                    1096.25,
+                    376.25
+                ],
+                "GMCoords": [
+                    898.25,
+                    378.5,
+                    1096.25,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    898.25,
+                    401.0,
+                    1096.25,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Admirals Cove",
+            "x": 1107.5,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    1109.75,
+                    439.25,
+                    1307.75,
+                    599.0
+                ],
+                "PMCoords": [
+                    1109.75,
+                    356.0,
+                    1307.75,
+                    376.25
+                ],
+                "GMCoords": [
+                    1109.75,
+                    378.5,
+                    1307.75,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    1109.75,
+                    401.0,
+                    1307.75,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "1 Volvo Dr",
+            "x": 1319.0,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    883,
+                    885,
+                    887,
+                    915,
+                    917
+                ],
+                "ElectricianBoxCoords": [
+                    1321.25,
+                    439.25,
+                    1519.25,
+                    599.0
+                ],
+                "PMCoords": [
+                    1321.25,
+                    356.0,
+                    1519.25,
+                    376.25
+                ],
+                "GMCoords": [
+                    1321.25,
+                    378.5,
+                    1519.25,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    1321.25,
+                    401.0,
+                    1519.25,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Vito Mazza",
+            "x": 1530.5,
+            "y": 353.75,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    1532.75,
+                    439.25,
+                    1730.75,
+                    599.0
+                ],
+                "PMCoords": [
+                    1532.75,
+                    356.0,
+                    1730.75,
+                    376.25
+                ],
+                "GMCoords": [
+                    1532.75,
+                    378.5,
+                    1730.75,
+                    398.75
+                ],
+                "ForemanCoords": [
+                    1532.75,
+                    401.0,
+                    1730.75,
+                    421.25
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Brick Church Garage",
+            "x": 50.0,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [
+                    949
+                ],
+                "ElectricianBoxCoords": [
+                    52.25,
+                    743.0,
+                    250.25,
+                    902.75
+                ],
+                "PMCoords": [
+                    52.25,
+                    659.75,
+                    250.25,
+                    680.0
+                ],
+                "GMCoords": [
+                    52.25,
+                    682.25,
+                    250.25,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    52.25,
+                    704.75,
+                    250.25,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Bas Columbia",
+            "x": 261.5,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": true,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    263.75,
+                    743.0,
+                    461.75,
+                    902.75
+                ],
+                "PMCoords": [
+                    263.75,
+                    659.75,
+                    461.75,
+                    680.0
+                ],
+                "GMCoords": [
+                    263.75,
+                    682.25,
+                    461.75,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    263.75,
+                    704.75,
+                    461.75,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": "Finished?"
+        },
+        {
+            "name": "Spring St",
+            "x": 473.0,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": true,
+                "Foreman": false,
+                "Electrician": [],
+                "ElectricianBoxCoords": [
+                    475.25,
+                    743.0,
+                    673.25,
+                    902.75
+                ],
+                "PMCoords": [
+                    475.25,
+                    659.75,
+                    673.25,
+                    680.0
+                ],
+                "GMCoords": [
+                    475.25,
+                    682.25,
+                    673.25,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    475.25,
+                    704.75,
+                    673.25,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Brick Church - Build. A",
+            "x": 684.5,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    821,
+                    833
+                ],
+                "ElectricianBoxCoords": [
+                    686.75,
+                    743.0,
+                    884.75,
+                    902.75
+                ],
+                "PMCoords": [
+                    686.75,
+                    659.75,
+                    884.75,
+                    680.0
+                ],
+                "GMCoords": [
+                    686.75,
+                    682.25,
+                    884.75,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    686.75,
+                    704.75,
+                    884.75,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Wonder Food - Staten",
+            "x": 896.0,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    711,
+                    893,
+                    947
+                ],
+                "ElectricianBoxCoords": [
+                    898.25,
+                    743.0,
+                    1096.25,
+                    902.75
+                ],
+                "PMCoords": [
+                    898.25,
+                    659.75,
+                    1096.25,
+                    680.0
+                ],
+                "GMCoords": [
+                    898.25,
+                    682.25,
+                    1096.25,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    898.25,
+                    704.75,
+                    1096.25,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "38th W EV Charger",
+            "x": 1107.5,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": false,
+                "Electrician": [
+                    811
+                ],
+                "ElectricianBoxCoords": [
+                    1109.75,
+                    743.0,
+                    1307.75,
+                    902.75
+                ],
+                "PMCoords": [
+                    1109.75,
+                    659.75,
+                    1307.75,
+                    680.0
+                ],
+                "GMCoords": [
+                    1109.75,
+                    682.25,
+                    1307.75,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    1109.75,
+                    704.75,
+                    1307.75,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Avid Hotel MD",
+            "x": 1530.5,
+            "y": 657.5,
+            "status": {
+                "PM": true,
+                "GM": false,
+                "Foreman": true,
+                "Electrician": [
+                    983,
+                    985,
+                    987
+                ],
+                "ElectricianBoxCoords": [
+                    1532.75,
+                    743.0,
+                    1730.75,
+                    902.75
+                ],
+                "PMCoords": [
+                    1532.75,
+                    659.75,
+                    1730.75,
+                    680.0
+                ],
+                "GMCoords": [
+                    1532.75,
+                    682.25,
+                    1730.75,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    1532.75,
+                    704.75,
+                    1730.75,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        },
+        {
+            "name": "Unassigned",
+            "x": 1319.0,
+            "y": 657.5,
+            "status": {
+                "PM": false,
+                "GM": false,
+                "Foreman": true,
+                "Electrician": [
+                    683,
+                    687,
+                    689,
+                    693,
+                    695,
+                    697,
+                    699,
+                    701,
+                    703,
+                    705,
+                    707,
+                    729,
+                    741,
+                    743,
+                    745,
+                    747,
+                    771,
+                    773,
+                    783,
+                    791,
+                    793,
+                    795,
+                    819,
+                    839,
+                    853,
+                    857,
+                    873,
+                    875,
+                    911,
+                    913
+                ],
+                "ElectricianBoxCoords": [
+                    1321.25,
+                    743.0,
+                    1519.25,
+                    902.75
+                ],
+                "PMCoords": [
+                    1321.25,
+                    659.75,
+                    1519.25,
+                    680.0
+                ],
+                "GMCoords": [
+                    1321.25,
+                    682.25,
+                    1519.25,
+                    702.5
+                ],
+                "ForemanCoords": [
+                    1321.25,
+                    704.75,
+                    1519.25,
+                    725.0
+                ],
+                "Collapsed": false
+            },
+            "note": ""
+        }
+    ],
+    "scale": 0.225,
+    "canvas_transform": [
+        179.0,
+        82.0
+    ],
+    "scroll_x": 0.0,
+    "scroll_y": 0.022197558268590455
+}
